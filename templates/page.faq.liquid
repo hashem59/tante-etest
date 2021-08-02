@@ -1,0 +1,234 @@
+<style>
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+ 
+}
+
+.container {
+  margin: 0 auto;
+/*   padding: 4rem; */
+  width: 100%;
+}
+
+h3 {
+  font-size: 16px;
+  color: #373d51;
+  padding: 1.3rem;
+  margin: 0;
+}
+
+.accordion-item .question, .section-title {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .question:hover,
+.accordion .question:hover::after {
+  cursor: pointer;
+  color: {{ settings.color_button }};
+}
+
+.accordion .question:hover::after {
+  border: 1px solid {{ settings.color_button }};;
+}
+
+.accordion .question.active {
+  color: {{ settings.color_button }};
+  border-bottom: 1px solid {{ settings.color_button }};
+}
+
+.accordion .question:after {
+/*   font-family: 'Ionicons'; */
+  content: '+';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 16px;
+  color: #000;
+/*   padding: 5px; */
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #000;
+  text-align: center;
+  line-height:28px;
+}
+
+  
+
+.accordion .question.active::after {
+/*   font-family: 'Ionicons'; */
+  content: '-';
+  color:  {{ settings.color_button}};
+  border: 1px solid  {{ settings.color_button }};
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+  
+  .accordion-item a, .section-title  {
+      /*font-weight:bold !important;*/
+  }
+  
+  .section-title{ text-align:left !important; padding:0px !important; margin:0px !important; border-bottom:0px; margin-top:40px !important;}
+  .section-title::after{margin:0px !important; border-bottom:0px !important;}
+  h1{text-decoration:underline;}
+  
+  .uline{ text-decoration:underline; }
+
+  .accordion-item p a { font-weight: normal !important; text-decoration: underline; }
+</style>
+
+<div class="container page-width">
+
+
+  <div class="accordion">
+
+    <br />
+    
+    
+    <div class="rich-text__heading--medium text-center">
+          <h2 class="h3">{{page.title}}</h2>
+    </div>
+    
+
+{% comment %}    <h1 class="section-title"></h1>
+ 
+    <div class="accordion-item">
+      <a class="question">Wie lange habe ich Zugriff auf ein eSeminar?</a>
+      <div class="content">
+        <p>
+          Sie erhalten ab Bestelldatum für zwei Monate Zugriff auf den bestellten Content.
+        </p>
+      </div>
+    </div>    
+
+    <div class="accordion-item">
+      <a class="question"> Wie kann ich auf die Inhalte zugreifen?</a>
+      <div class="content">
+        <p>
+          Die Videos können im Webbrowser oder in der DVFA App 
+          (für <a href="http://www.dvfa.de/app-ios" target="_blank">iOS</a> und <a href="http://www.dvfa.de/app-android" target="_blank">Android</a>) angesehen werden. Hier können Sie auch die zusätzlichen Lernmaterialien (i.d.R. PDF-Dateien) herunterladen. In den Apps haben Sie die Möglichkeit, die Videos auf Ihrem Gerät zu speichern, um diese zu einem späteren Zeitpunkt ohne Online-Zugang anzusehen.        
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <a class="question">Wie lange dauert es, bis ich die Videos in der DVFA online Akademie nach dem Kauf sehen kann?</a>
+      <div class="content">
+        <p>
+          Sämtliche gekauften Module werden sofort freigeschaltet. Loggen Sie sich hierfür einfach unter 
+          <a href="http://www.dvfa.de/online-akademie" target="_blank"> www.dvfa.de/online-akademie</a> mit Ihren per Mail erhaltenen Zugangsdaten ein.       
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <a class="question">Wie kann ich bezahlen?</a>
+      <div class="content">
+        <p>
+          Sie können auf Rechnung, per PayPal oder Kreditkarte (Mastercard und Visa) zahlen. Auch beim Kauf auf Rechnung wird Ihnen das eSeminar umgehend freigeschaltet.       
+        </p>
+      </div>
+    </div>{% endcomment %}
+
+
+{% assign page_content = page.content %}
+
+{% assign list_items = page_content| split:'<li>' %}
+
+  {% for list_item in list_items %}
+
+  {% assign item = list_item | remove:"<ul>" |  strip | strip_newlines  %}
+
+{% comment %}  {% assign size_s = item | size%}
+  {{size_s}}
+{% endcomment %}
+
+  {% unless item == ""  %}
+    {% assign question_header = forloop.index | modulo:2%}
+    {% if  question_header == 0 %}
+        <div class="accordion-item">
+        <a class="question">{{item}}</a>
+
+    {% else %}
+        <div class="content">
+          <p>
+            {{item}}     
+          </p>
+        </div>
+      </div>
+
+    {% endif %}
+
+  {% endunless %}
+
+
+
+  {% endfor %}
+
+
+    
+    
+  </div>
+</div>
+
+
+<script>
+const items = document.querySelectorAll(".accordion a");
+
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>

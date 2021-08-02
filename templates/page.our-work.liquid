@@ -1,0 +1,28 @@
+{{ 'our-work-styles.scss.css' | asset_url | stylesheet_tag }}
+{% section 'our-work-hero' %}
+{% comment %}
+check page.Other-projects for the content && our-work-scripts snippet
+{% endcomment %}
+<div class="ourwork_container">
+	<div class="projects-nav">
+		<div class="p-nav-wrab nav-not-open">
+			<span class="nav-arrow plus">+</span>
+			<span class="nav-arrow minus">_</span>
+			<div class="grid">
+				<div class="grid__item medium-up--one-quarter text-center nav-tem-wr selected"><h3 class="nav-item ">SHOP SETUP</h3></div>
+				<div class="grid__item medium-up--one-quarter text-center nav-tem-wr"><h3 class="nav-item">SHOP OPTIMIZATION</h3></div>
+				<div class="grid__item medium-up--one-quarter text-center nav-tem-wr"><h3 class="nav-item">ONLINE MARKETING</h3></div>
+				<div class="grid__item medium-up--one-quarter text-center nav-tem-wr"><h3 class="nav-item">CRM</h3></div>
+			</div>
+		</div>
+		<div class="p-nav-mob">
+
+		</div>
+	</div>
+
+	<div class="projects-container" id="current-tab-content-wrap">
+		<div id="loader_wrap">
+			<div class="loader">Loading...</div>
+		</div>
+	</div>
+</div>

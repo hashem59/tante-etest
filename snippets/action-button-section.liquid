@@ -1,0 +1,25 @@
+<div class="page-width">
+
+  <div class="grid">
+    <div class="grid__item {% unless block.settings.full_width %} medium-up--two-thirds medium-up--push-one-sixth{% endunless %}">
+      {% if block.settings.section_title != blank %}
+        <div class="rich-text__heading--{{ block.settings.text_size }} text-center">
+          <h2 class="h3">{{ block.settings.section_title | escape }}</h2>
+        </div>
+      {% endif %}
+      {% if block.settings.text != blank %}
+        <div class="rich-text__text--{{ block.settings.text_size }} rte-setting text-{{block.settings.text_align}}">{{ block.settings.text }}</div>
+      {% endif %}
+
+    {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+  <a href="{{ block.settings.button_link }}" class="btn rich-text__text--{{ block.settings.text_size }}" style=" width: 95%;max-width: 928px;margin: 0 auto;display: inherit;;">
+    {{ block.settings.button_label | escape }}
+  </a>
+  {% endif %}
+
+  </div>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,147 @@
+
+<div class="service-itemh shop-setup">
+
+   <div class="hero hero--small hero__overlay box ratio-container js lazyloaded" data-bgset="//cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_180x.JPG?v=1519813572 180w 80h,
+      //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_360x.JPG?v=1519813572 360w 159h,
+      //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_540x.JPG?v=1519813572 540w 239h,
+      //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_720x.JPG?v=1519813572 720w 318h,
+      //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_900x.JPG?v=1519813572 900w 398h,
+      //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_1080x.JPG?v=1519813572 1080w 477h,
+      //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_1296x.JPG?v=1519813572 1296w 572h,
+      //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish.JPG?v=1519813572 1329w 587h" data-parent-fit="cover" style="background-position: center center; background-image: url(&quot;https://cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish.JPG?v=1519813572&quot;);">
+      <div class="hero__inner">
+         <div class="page-width text-center">
+            <h2 class="h1 mega-title">{{section.settings.title}}</h2>
+            <div class="rte-setting mega-subtitle">
+               <p>{{section.settings.text}}</p>
+            </div>
+         </div>
+      </div>
+      <picture style="display: none;">
+         <source data-srcset="//cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_180x.JPG?v=1519813572 180w 80h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_360x.JPG?v=1519813572 360w 159h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_540x.JPG?v=1519813572 540w 239h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_720x.JPG?v=1519813572 720w 318h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_900x.JPG?v=1519813572 900w 398h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_1080x.JPG?v=1519813572 1080w 477h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_1296x.JPG?v=1519813572 1296w 572h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish.JPG?v=1519813572 1329w 587h" sizes="1366px" srcset="//cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_180x.JPG?v=1519813572 180w 80h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_360x.JPG?v=1519813572 360w 159h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_540x.JPG?v=1519813572 540w 239h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_720x.JPG?v=1519813572 720w 318h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_900x.JPG?v=1519813572 900w 398h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_1080x.JPG?v=1519813572 1080w 477h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_1296x.JPG?v=1519813572 1296w 572h, //cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish.JPG?v=1519813572 1329w 587h">
+         <img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="1366px">
+      </picture>
+   </div>
+   <noscript>
+      <div class="hero hero--small hero__overlay" style="background-image: url('//cdn.shopify.com/s/files/1/0003/7729/0803/files/K1600_Slider_Image_Yellowish_2048x.JPG?v=1519813572'); background-position: center center;"></div>
+   </noscript>
+</div>
+<div class="page-width" style="padding-top:20px;">
+
+
+
+     <!--   {% if section.settings.text != blank %}
+        <div class="rich-text__text--medium  rte-setting text-{{section.settings.align_text}}">{{ section.settings.text }}</div>
+      {% endif %} -->
+
+
+  <div class="grid {% unless section.blocks.size == 5 %}grid--uniform{% endunless %} grid--flush-bottom">
+    {%- assign grid_item_width = 'medium-up--one-third' -%}
+
+    {% assign max_img_height = section.settings.img_max_height | plus:0 %}
+
+    {% if max_img_height < 345 %}
+	    {%- assign max_height = max_img_height -%}
+    {%else %}
+   	 	{%- assign max_height = 345 -%}
+    {%endif%}
+
+    {% case section.blocks.size %}
+      {% when 1 %}
+        {%- assign grid_item_width = 'medium-up--one-half' -%}
+
+    	{% if max_img_height < 530 %}
+	    {%- assign max_height = max_img_height -%}
+        {%else %}
+            {%- assign max_height = 530 -%}
+        {%endif%}
+
+      {% when 2 %}
+        {%- assign grid_item_width = 'medium-up--one-half' -%}
+
+        	{% if max_img_height < 530 %}
+	    {%- assign max_height = max_img_height -%}
+        {%else %}
+            {%- assign max_height = 530 -%}
+        {%endif%}
+
+      {% when 4 %}
+        {%- assign grid_item_width = 'medium-up--one-half' -%}
+    	{% if max_img_height < 530 %}
+	    {%- assign max_height = max_img_height -%}
+        {%else %}
+            {%- assign max_height = 530 -%}
+        {%endif%}
+
+        {% when 5 %}
+        {%- assign grid_item_width = 'medium-up--one-half' -%}
+        {%- assign max_height = 530 -%}
+    {% endcase %}
+    {% for block in section.blocks %}
+      {% if section.blocks.size == 5 and forloop.index < 3 %}
+        {%- assign column_width = 'medium-up--one-half' -%}
+    	{% if max_img_height < 530 %}
+	    {%- assign max_height = max_img_height -%}
+        {%else %}
+            {%- assign max_height = 530 -%}
+    	{% endif%}
+    {% else %}
+        {%- assign column_width = grid_item_width -%}
+      {% endif %}
+      <div class="grid__item {{ column_width }} text-{{ section.settings.align_text }}" {{ block.shopify_attributes }}>
+        {% if block.settings.enable_image %}
+          {% if block.settings.image != blank %}
+            {% capture img_id %}TextColumnImage-{{ block.id }}{% endcapture %}
+            {% capture wrapper_id %}TextColumnImageWrapper-{{ block.id }}{% endcapture %}
+            {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            {% include 'image-style' with image: block.settings.image, width: max_height, height: max_height, small_style: true, wrapper_id: wrapper_id, img_id: img_id %}
+            <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
+              <div style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;">
+                <img id="{{ img_id }}"
+                     class="feature-row__image lazyload"
+                     src="{{ block.settings.image | img_url: '300x300' }}"
+                     data-src="{{ img_url }}"
+                     data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                     data-sizes="auto"
+                     alt="{{ block.settings.image.alt | escape }}">
+              </div>
+            </div>
+            <noscript>
+              <p>
+                {{ block.settings.image | img_url: '480x480', scale: 2 | img_tag: block.settings.image.alt, 'feature-row__image' }}
+              </p>
+            </noscript>
+          {% else %}
+<!--             <p class="alt-img">
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            </p> -->
+        <style>
+          .alt-img svg{max-height:{{max_height}};}
+        </style>
+          {% endif %}
+        {% endif %}
+        {% if block.settings.title != blank %}
+          <h3 class="h4" style="margin-bottom:0px;">{{ block.settings.title | escape }}</h3>
+        {% endif %}
+
+        {% if block.settings.price != blank %}
+          <span class="product-price__price" style="margin-bottom:18px; display:inline-block;">{{ block.settings.price | times: 100 | money }}</span>
+        {% endif %}
+
+        {% if block.settings.text != blank %}
+          <div class="rte-setting">{{ block.settings.text }}</div>
+        {% endif %}
+        {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+          <a href="{{ block.settings.button_link }}" class="btn product-form__cart-submit product-form__cart-submit--small">
+            {{ block.settings.button_label | escape }}
+          </a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if section.blocks.size == 0 %}
+    {% include 'no-blocks' %}
+  {% endif %}
+</div>

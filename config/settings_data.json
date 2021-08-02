@@ -1,0 +1,2169 @@
+{
+  "current": {
+    "color_text": "#424a60",
+    "color_body_text": "#6c7b93",
+    "color_sale_text": "#7796a8",
+    "color_borders": "#e8e9eb",
+    "color_button": "#f13b62",
+    "color_button_hover": "#ec1e79",
+    "color_button_text": "#fff",
+    "color_small_button": "#ec1e79",
+    "color_small_button_text": "#ffffff",
+    "color_text_field": "#ffffff",
+    "color_text_field_text": "#000",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": 25,
+    "color_body_bg": "#fff",
+    "type_header_family": "'Tamil Sangam MN'",
+    "type_header_base_size": "26px",
+    "type_base_family": "'Tamil Sangam MN'",
+    "type_base_size": "16px",
+    "type_bold_product_titles": false,
+    "share_image": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/groups\/269796610120394\/",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCPrFxvWrft9NMBvAc_OeJSw?view_as=subscriber",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/Bild1.jpg",
+    "ad_1_url": "shopify:\/\/pages\/our-services",
+    "ad_1_img": "shopify:\/\/shop_images\/400_400-01.jpg",
+    "ad_2_url": "https:\/\/www.applab24.com\/de\/",
+    "ad_2_img": "shopify:\/\/shop_images\/Banner.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/Logo_rechtkant_Schrift_rechts_zentriert_300x98_2dda5aab-6589-4bb4-8fe2-ccba0e6d84ac.png",
+          "logo_max_width": "180",
+          "main_linklist": "main-menu",
+          "main_linklist_mobile": "main-menu-mobile",
+          "side_linklist": "side-menu",
+          "show_cart_icon": false,
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Announce something here",
+          "message_link": "",
+          "color_bg": "#ffc152",
+          "color_text": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_linklist": "footer",
+          "footer_linklist_two": "",
+          "footer_newsletter_enable": false,
+          "show_payment_icons": false
+        }
+      },
+      "1520180425371": {
+        "type": "logo-bar",
+        "blocks": {
+          "1520180425371-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shopify_expert_2048x_f7ab7fc3-38bb-404b-a729-6b9ea18eb7d6.png",
+              "link": "https:\/\/www.shopify.com\/?ref=bertbaum-internet"
+            }
+          },
+          "1520180425371-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/klaviyo.png",
+              "link": "https:\/\/www.klaviyo.com\/partner\/signup?utm_source=0010V00002CC4Hw&utm_medium=partner"
+            }
+          }
+        },
+        "block_order": [
+          "1520180425371-0",
+          "1520180425371-1"
+        ],
+        "settings": {
+          "title": "",
+          "logo_max_width": "260",
+          "bg_color": "#e3e0e0"
+        }
+      },
+      "1520180510796": {
+        "type": "feature-columns",
+        "blocks": {
+          "1520180510796-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/usp1_41215133-ec2e-4365-8597-332652d24942.jpg",
+              "title": "Mehr Besucher",
+              "text": "<p>Wir helfen Dir mithilfe von Performance Marketing mehr Besucher in Deinen Shop zu bringen.&nbsp;<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1520180510796-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/usp2.jpg",
+              "title": "Mehr Kunden",
+              "text": "<p>Wir helfen Dir mithilfe von Conversion Rate Optimierung, dass mehr Deiner Besucher bei Dir kaufen.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1520180510796-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/usp3.jpg",
+              "title": "Mehr Umsatz pro Kunde",
+              "text": "<p>Wir helfen Dir mithilfe von E-Mail Automatisierungen &amp; Best-Practices, dass Kunden &ouml;fter und mehr bei Dir kaufen.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1520180510796-0",
+          "1520180510796-1",
+          "1520180510796-2"
+        ],
+        "settings": {
+          "title": "Darin können wir Dir helfen:",
+          "align_text": "center"
+        }
+      },
+      "1520180725483": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/adrian.png",
+          "layout": "left",
+          "title": "Das ist Tante-E:",
+          "text": "<p><strong>Dein Shop l&auml;uft gut, aber Du denkst da geht noch mehr?<\/strong><\/p>\n<p>Dann k&ouml;nnten wir genau der Richtige f&uuml;r Dich sein! Denn wir <strong>helfen <\/strong>Shopify H&auml;ndlern das <strong>Bestm&ouml;gliche aus ihren Shops herauszuholen<\/strong> und bisher noch verborgenes Potential ans Tageslicht zu bringen.<\/p>\n<p>Von Performance Marketing, &uuml;ber E-Mail Automatisierungen bis hin zu komplexen Shop-Analysen <strong>decken wir s&auml;mtliche Aufgabenfelder ab<\/strong>, um Deinen Shop-Umsatz nachhaltig zu steigern.<\/p>\n<p>Mit uns kannst Du Deine Projekte <strong>flexibel und perfekt&nbsp;zugeschnitten auf Deine W&uuml;nsche&nbsp; umsetzen<\/strong>. Denn wir verbinden die Dynamik &amp; Flexibilit&auml;t einer kleinen Agentur&nbsp;mit der tiefen Expertise eines breiten Netzwerks an E-Commerce Profis.<\/p>\n<p>Durch unseren 100%-tigen Fokus auf Shopify <strong>kennen wir das Shop-System wie kaum jemand in Deutschland<\/strong> &ndash; mit seinen St&auml;rken aber auch Schw&auml;chen. Wir kennen&nbsp;die Workarounds und wissen worauf man achten muss. So&nbsp;k&ouml;nnen wir Dir <strong>b&ouml;se &Uuml;berraschungen ersparen<\/strong>.<\/p>\n<p>Zudem <strong>beraten wir nicht nur, sondern betreiben selbst unsere eigenen Shopify-Shops<\/strong>. Wir wissen also ganz genau welchen Herausforderungen Du als Shopify-H&auml;ndler tagt&auml;glich gegen&uuml;berstehst.&nbsp;<\/p>\n<p>Daher steht bei uns <strong>nicht nur ein sch&ouml;nes Shop-Design<\/strong> im Vordergrund, sondern dar&uuml;ber hinaus, dass Dein Shop <strong>auch wirklich konvertiert<\/strong>.<\/p>\n<p><\/p>",
+          "button_label": "Mehr über uns erfahren",
+          "button_link": ""
+        }
+      },
+      "1520355336060": {
+        "type": "action-button",
+        "settings": {
+          "full_width": true,
+          "section_title": "",
+          "text": "<p>Das klingt interessant? Dann schreib uns und lass uns austauschen ob und wie wir Dir helfen k&ouml;nnen. Wir freuen uns!<\/p>",
+          "text_size": "medium",
+          "text_align": "center",
+          "button_label": "Umsatz-Boost Anfragen",
+          "button_link": "shopify:\/\/pages\/kontaktformular"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": "4",
+          "rows": "2",
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "image": "",
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "services": {
+        "type": "services",
+        "blocks": {
+          "1520409111957": {
+            "type": "hero",
+            "settings": {
+              "image": "",
+              "overlay_text_color": "#ffffff",
+              "overlay_transparence": "#000000",
+              "trancparency_percent": "0.4",
+              "alignment": "center",
+              "title": "Performance Marketing",
+              "text": "<p>Wir helfen Dir Deine Bekanntheit zu steigern und mehr Besucher auf Deinen Shop aufmerksam zu machen. Individuell zugeschnitten auf Deinen Bedarf.<\/p>",
+              "hero_size": "small",
+              "text_size": "medium",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1520409106166": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "facebook-advertising",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": true,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "Anfragen",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1520622766998": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "google-adwords-shopping",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": false,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "Anfragen",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1525038801799": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "seo-on-site-optimierung",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": false,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "ANFRAGEN",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1525039393528": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "online-marketing-mix",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": false,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "ANFRAGEN",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1520622801406": {
+            "type": "hero",
+            "settings": {
+              "image": "",
+              "overlay_text_color": "#ffffff",
+              "overlay_transparence": "#000000",
+              "trancparency_percent": "0.2",
+              "alignment": "center",
+              "title": "Conversion Rate Optimierung",
+              "text": "<p>Wir helfen Dir das Bestm&ouml;gliche aus Deinem Shop herauszuholen und mehr Deiner Besucher vom Kauf zu &uuml;berzeugen. Individuell auf Deine Bed&uuml;rfnisse zugeschnitten<\/p>",
+              "hero_size": "small",
+              "text_size": "medium",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1520622920416": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "shop-health-check",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": false,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "ANFRAGEN",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1525039985330": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "shop-tiefenprufung",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": false,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "ANFRAGEN",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1525040072130": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "conversion-rate-optimierung",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": false,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "ANFRAGEN",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1525040133603": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "kundenresearch",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": false,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "ANFRAGEN",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1520622949866": {
+            "type": "hero",
+            "settings": {
+              "image": "",
+              "overlay_text_color": "#ffffff",
+              "overlay_transparence": "#000000",
+              "trancparency_percent": "0.3",
+              "alignment": "center",
+              "title": "Customer Relationship Management",
+              "text": "<p>Wir helfen Dir Deinen durchschnittlichen Warenkorbwert sowie die Customer Lifetime Value Deiner Kunden zu steigern.<\/p>",
+              "hero_size": "small",
+              "text_size": "medium",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1520623062599": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "e-mail-automatisierung-paket",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": false,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "ANFRAGEN",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1525040334114": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "facebook-messenger-automatisierung",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": false,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "ANFRAGEN",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1525040378154": {
+            "type": "featuredproduct",
+            "settings": {
+              "featured_product": "e-mail-marketing-optimierung",
+              "image_size": "medium",
+              "show_quantity_selector": false,
+              "show_variant_labels": false,
+              "show_vendor": false,
+              "enable_zoom": false,
+              "show_share_buttons": false,
+              "force_action_redirect": true,
+              "button_label": "ANFRAGEN",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1520624882470": {
+            "type": "actionbutton",
+            "settings": {
+              "full_width": true,
+              "section_title": "",
+              "text": "<p>Du bist Dir nicht sicher, welches der obenen genannten Pakete am meisten Sinn f&uuml;r Dich macht? Oder Du bist mehr auf der Suche nach pers&ouml;nlicher und strategischer Beratung bzw. speziellen Tipps zu Shopify?<\/p>\n<p>Auch das ist kein Problem. Meld Dich einfach mit Deinem pers&ouml;nlichen Anliegen und wir schauen, ob wir Dir helfen k&ouml;nnen.<\/p>",
+              "text_size": "medium",
+              "text_align": "center",
+              "button_label": "Individuelle Anfrage Absenden",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          }
+        },
+        "block_order": [
+          "1520409111957",
+          "1520409106166",
+          "1520622766998",
+          "1525038801799",
+          "1525039393528",
+          "1520622801406",
+          "1520622920416",
+          "1525039985330",
+          "1525040072130",
+          "1525040133603",
+          "1520622949866",
+          "1520623062599",
+          "1525040334114",
+          "1525040378154",
+          "1520624882470"
+        ],
+        "settings": {
+        }
+      },
+      "portfolio": {
+        "type": "portfolio",
+        "blocks": {
+          "1525179643115": {
+            "type": "blank_space",
+            "settings": {
+              "height": "50"
+            }
+          },
+          "1525179383539": {
+            "type": "actionbutton",
+            "settings": {
+              "full_width": true,
+              "section_title": "Beratung & Shop-Betreiber in einem",
+              "text": "<p>Wir sind nicht nur reine Beratung, sondern betreiben zudem unsere eigenen Shopify-Shops. Darin liegt die&nbsp;Tiefe unserer Expertise und die St&auml;rke unserer Beratungst&auml;tigkeit.<\/p>",
+              "text_size": "medium",
+              "text_align": "center",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1525179661372": {
+            "type": "blank_space",
+            "settings": {
+              "height": "50"
+            }
+          },
+          "1521038293928": {
+            "type": "hero",
+            "settings": {
+              "image": "",
+              "overlay_text_color": "#ffffff",
+              "overlay_transparence": "#000000",
+              "trancparency_percent": "0.3",
+              "alignment": "center",
+              "title": "Unsere eigenen Shopify Shops",
+              "text": "<p>Wir wissen wie man Umsatz steigert. Denn wir machen es tagt&auml;glich als Shopify H&auml;ndler selbst. Derzeit betreuen wir zwei eigene Shopify Shops.<\/p>",
+              "hero_size": "small",
+              "text_size": "medium",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1521038353194": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Einzig_Artig.JPG",
+              "layout": "left",
+              "bg_color": "#ffffff",
+              "text_color": "#3d4246",
+              "heading": "Einzig & Artig Berlin",
+              "text": "<p>Urspr&uuml;nglich gestartet als ein Dropshipping Projekt unter ehemaligen Uni-Freunden, hat sich Einzig &amp; Artig Berlin mittlerweile zu einer Nischenmarke im Modeschmuckbereich, mit eigenem Lager in Deutschland sowie Lieferanten&nbsp;von zwei Kontinenten, weiterentwickelt.&nbsp;<\/p>",
+              "button_label": "Zum Einzig & Artig Berlin Shop",
+              "button_link": "https:\/\/www.einzigundartigberlin.de\/"
+            }
+          },
+          "1521038406616": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/versuch10.png",
+              "layout": "right",
+              "bg_color": "#ffffff",
+              "text_color": "#788188",
+              "heading": "Consider Cologne Shop",
+              "text": "<p>Lena &amp; Leonie sind als Youtuber und Lifestyle Blogger besser unter dem Namen Consider Cologne bekannt. Die beiden haben eine Followerschaft von &uuml;ber 200.000 Youtube-Abonennten und arbeiten mit bekannten Marken wie Nike, Daniel Wellington und Westwing zusammen. Seit Ende 2017 helfen wir ihnen nun dabei den Traum vom eigenen&nbsp;Produkt &amp; Online-Shop zu verwirklichen.<\/p>",
+              "button_label": "Zum Consider Cologne Shop",
+              "button_link": "https:\/\/shop.considercologne.com\/"
+            }
+          },
+          "1521039820954": {
+            "type": "hero",
+            "settings": {
+              "image": "",
+              "overlay_text_color": "#ffffff",
+              "overlay_transparence": "#000000",
+              "trancparency_percent": "0.3",
+              "alignment": "center",
+              "title": "Unsere Shopify Kunden",
+              "text": "<p>Mit unserem erlenten Wissen &amp; Know-How&nbsp;helfen wir ebenfalls anderen Shopify H&auml;ndlern. Wir sind die erste Shopify Beratung Deutschlands mit Fokus auf nachhaltiger Shop-Performance Optimierung.<\/p>",
+              "hero_size": "small",
+              "text_size": "medium",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1521041850410": {
+            "type": "logo_bar",
+            "settings": {
+              "title": "Eine Auswahl unserer jüngsten Kunden",
+              "logo_max_width": "200",
+              "bg_color": "#ffffff",
+              "image1": "shopify:\/\/shop_images\/b99d5d43-2cde-4ec7-9b43-a2eecfc08b3b.png",
+              "link1": "https:\/\/www.staycoldapparel.com\/",
+              "image2": "shopify:\/\/shop_images\/Logo_kassensystem.jpg",
+              "link2": "https:\/\/thebarn.de\/",
+              "image3": "shopify:\/\/shop_images\/Supermommy_logo.jpeg",
+              "link3": "https:\/\/supermommybabykids.com\/",
+              "image4": "shopify:\/\/shop_images\/logo2-01.png",
+              "link4": "",
+              "image5": "shopify:\/\/shop_images\/logo-01.png",
+              "link5": "",
+              "image6": "shopify:\/\/shop_images\/Logo_Sprechblase_weiss_Hintergrund_134x134_crop_center_2x_557bf733-e50c-4493-ada0-b8c2e57274d4.png",
+              "link6": "https:\/\/www.generation-yes.de\/"
+            }
+          },
+          "1521044625638": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pexels-photo-261706.JPG",
+              "layout": "left",
+              "bg_color": "#ffffff",
+              "text_color": "#788188",
+              "heading": "Über 20% zusätzlichen Umsatz in 10 Tagen - durch E-Mail Marketing",
+              "text": "<p>Durch unsere Black Friday E-Mail Marketing Kampagne haben wir f&uuml;r unseren Kunden mit sechstelligem Monatsumsatz &uuml;ber 20% zus&auml;tzlichen Revenue - allein durch E-Mail Marketing - genieren k&ouml;nnen.<\/p>",
+              "button_label": "E-Mail Marketing Anfragen",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1523482649332": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pexels-photo-595699.JPG",
+              "layout": "right",
+              "bg_color": "#ffffff",
+              "text_color": "#788188",
+              "heading": "Mit Marketing den Markteintritt in den B2C-Markt gemeistert",
+              "text": "<p>Durch die individuelle Erarbeitung einer Online-Marketing-Strategie sowie Durchf&uuml;hrung einer mehrw&ouml;chigen Marketing Testphase, konnten wir f&uuml;r unseren Kunden nicht nur Sales, sondern klare Marketing Kan&auml;le, Ads und Kundenansprachen bestimmen.&nbsp;Dies bildet nun die Grundlage f&uuml;r dessen Strategie im B2C-Markt.<\/p>",
+              "button_label": "Performance Marketing Anfragen",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1523483308467": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pic-01.png",
+              "layout": "left",
+              "bg_color": "#ffffff",
+              "text_color": "#788188",
+              "heading": "Über 6.000€ mehr Umsatz im Monat - ganz automatisch",
+              "text": "<p>E-Mail Automatisierung wird oft untersch&auml;tzt, bietet aber ungeahntes Potential und St&auml;rken. Einmal aufgesetzt generieren unsere automatisierten E-Mail Sequenzen typischerweise zwischen 6-12% mehr monatlichen Umsatz.<\/p>",
+              "button_label": "E-Mail Automatisierung Anfragen",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1523483569739": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pexels-photo-577210_f1483027-3c49-4601-b958-afc9fca1be7a.JPG",
+              "layout": "right",
+              "bg_color": "#ffffff",
+              "text_color": "#788188",
+              "heading": "Conversion Rate verdoppelt - durch Analyse und gezielte Optimierung",
+              "text": "<p>Durch&nbsp;eine strukturierte qualitative und quantitative Datenanalyse konnten wir die Barrieren im Shop unseres Kunden aufsp&uuml;ren und ungenutztes Potential hervorbringen. So konnten wir die Conversion Rate f&uuml;r unseren Kunden nachhaltig verdoppeln.&nbsp;<\/p>",
+              "button_label": "Conversion Rate Optimierung Anfragen",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1521044658788": {
+            "type": "hero",
+            "settings": {
+              "image": "",
+              "overlay_text_color": "#ffffff",
+              "overlay_transparence": "#000000",
+              "trancparency_percent": "0.3",
+              "alignment": "center",
+              "title": "Eigene Tools & Entwicklungen",
+              "text": "<p>Wir bauen kontinuierlich f&uuml;r unsere Kunden&nbsp;individuell zugeschnittene, neue L&ouml;sungen. Eine Auswahl findest Du hier.&nbsp;Gerne helfen wir auch Dir mit Quick Fixes oder auch individuellen L&ouml;sungen.<\/p>",
+              "hero_size": "x-small",
+              "text_size": "medium",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1525179643115",
+          "1525179383539",
+          "1525179661372",
+          "1521038293928",
+          "1521038353194",
+          "1521038406616",
+          "1521039820954",
+          "1521041850410",
+          "1521044625638",
+          "1523482649332",
+          "1523483308467",
+          "1523483569739",
+          "1521044658788"
+        ],
+        "settings": {
+        }
+      },
+      "feature-columns-custom": {
+        "type": "feature-columns-custom",
+        "blocks": {
+          "1521201020241": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "shopify:\/\/shop_images\/kathykunz.JPG",
+              "title": "Mehrsprachiger Shop",
+              "text": "<p>Du m&ouml;chtest Deinen Shop auf mehreren Sprachen und W&auml;hrungen haben? Schreib uns! Wir haben bereits andere Shopify H&auml;ndler hiermit unterst&uuml;tzt.<\/p>",
+              "button_label": "button option available",
+              "button_link": ""
+            }
+          },
+          "1521201152336": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "shopify:\/\/shop_images\/andre_profile.JPG",
+              "title": "Wholesaleshop",
+              "text": "<p>Du m&ouml;chtest Deine Aktivit&auml;ten in den B2B Bereich ausweiten? Schreib uns! Wir haben bereits f&uuml;r andere Kunden einen individuellen Wholesaleshop erstellt.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1521201160734": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "Abo-Subscription-Funnel",
+              "text": "<p>Du suchst nach einer individuellen L&ouml;sung Besucher f&uuml;r Deine Abo-Anmeldung zu begeistern? Schreib uns! Wir haben f&uuml;r Kunden perfekte L&ouml;sungen konzipiert.&nbsp; &nbsp;<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524505949515": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "Spezielle Warenkorbseitenanpassung",
+              "text": "<p>Du willst den Paypal und Amazon Express Button besser abbilden? Brauchst die AGB-Checkbox? Haben wir alles schon gemacht!<\/p>\n<p><\/p>\n<p><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524507378616": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "USP-Leiste mit Icons",
+              "text": "<p>Best-Practice bei vielen Online-Shops: Deine eigene Leiste &uuml;ber dem Men&uuml; mit den drei zentralen Kaufargumenten (inkl. Icons). Wir haben eine standardisierte L&ouml;sung. Schreib uns!<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524514186921": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "Scarcity Elemente auf Produktseite",
+              "text": "<p>Deine Produkte sind &ouml;fters fast ausverkauft? Lass es Deine Kunden wissen und f&ouml;rdere so den Kaufimpuls. Anstatt eine App mit monatlichen Geb&uuml;hren zu kaufen, schreib uns.<em>&nbsp;&nbsp;<\/em><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524514809020": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "Anzeigen spezieller Produktinfos",
+              "text": "<p>Du m&ouml;chtest Zusatzinfos zu den Produktgr&ouml;&szlig;en anzeigen lassen? Aber nur, wenn der Kunde es wirklich braucht? Schreib uns. Wir haben L&ouml;sungen.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524515078638": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "Infos nur für eingeloggte Besucher",
+              "text": "<p>Du m&ouml;chtest Deine Preise nur f&uuml;r eingeloggte Besucher anzeigen? Du m&ouml;chtest bestimmte Infos Fremden vorenthalten? Schreib uns.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524515272706": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "Personalisieren des Kontaktformulars",
+              "text": "<p>Du m&ouml;chtest weitere Informationen, zus&auml;tzlich zu den bisherigen Feldern, im Kontaktformular abfragen? Selbst Drop-Downs sind kein Problem.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524516620887": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "Moderne FAQ-Seiten",
+              "text": "<p>Du m&ouml;chtest Deinen Kunden eine &uuml;bersichtlichere und modernere FAQ-Seite bieten? Wir haben L&ouml;sungen konzipiert, die Dir dies kosteng&uuml;nstig erm&ouml;glichen.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524516830994": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "Individuelle \"Über Uns\" Seite",
+              "text": "<p>Du willst die Geschichte Deines Unternehmen und Deine Teammitglieder pr&auml;sentieren? Wir&nbsp;bieten perfekte&nbsp;\"&Uuml;ber Uns\"-Seitenstrukturen an.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1521201020241",
+          "1521201152336",
+          "1521201160734",
+          "1524505949515",
+          "1524507378616",
+          "1524514186921",
+          "1524514809020",
+          "1524515078638",
+          "1524515272706",
+          "1524516620887",
+          "1524516830994"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "uber-uns": {
+        "type": "uber-uns",
+        "blocks": {
+          "1523802549962": {
+            "type": "blank_space",
+            "settings": {
+              "height": "50"
+            }
+          },
+          "1521546964528": {
+            "type": "logo_bar",
+            "settings": {
+              "title": "Tools mit denen wir Arbeiten",
+              "logo_max_width": "300",
+              "bg_color": "#ffffff",
+              "image1": "shopify:\/\/shop_images\/shopify-logo.png",
+              "link1": "",
+              "image2": "shopify:\/\/shop_images\/klaviyo-logo.png",
+              "link2": "",
+              "image3": "shopify:\/\/shop_images\/mailchimp-logo-vector-png-with-over-12-million-people-using-the-service-to-send-over-10-billion-emails-per-month-mailchimp-is-considered-one-of-the-lead.jpg",
+              "link3": "",
+              "image4": "shopify:\/\/shop_images\/logo_new-4cb168333cb38d237d7e6e09b0dd540204b65269e8dd4345ab63c149f4ecde24_b1a2c627-8129-427c-8d60-8c6788188965.png",
+              "link4": "",
+              "image5": "shopify:\/\/shop_images\/Haendlerbund_Logo_RGB_814ae269-2177-4ee2-845b-dbd623ed042f.png",
+              "link5": "",
+              "image6": "shopify:\/\/shop_images\/Download.png",
+              "link6": ""
+            }
+          },
+          "1525034874613": {
+            "type": "logo_bar",
+            "settings": {
+              "title": "",
+              "logo_max_width": "300",
+              "bg_color": "#ffffff",
+              "image1": "shopify:\/\/shop_images\/Google-Analytics-Logo.png",
+              "link1": "",
+              "image2": "shopify:\/\/shop_images\/Google-Tag-manager-796x398.jpg",
+              "link2": "",
+              "image3": "shopify:\/\/shop_images\/hotjar-logo_large_4c742f34-8b76-4cae-8d6e-588892f6c3d5.png",
+              "link3": "",
+              "image4": "shopify:\/\/shop_images\/Google-Adwords-Logo.jpg",
+              "link4": "",
+              "image5": "shopify:\/\/shop_images\/logo-52646b57011396883225b8a70f836a87.png",
+              "link5": "",
+              "image6": "",
+              "link6": ""
+            }
+          },
+          "1525035121247": {
+            "type": "logo_bar",
+            "settings": {
+              "title": "Mitglied in",
+              "logo_max_width": "300",
+              "bg_color": "#ffffff",
+              "image1": "shopify:\/\/shop_images\/factory.png",
+              "link1": "",
+              "image2": "",
+              "link2": "",
+              "image3": "",
+              "link3": "",
+              "image4": "",
+              "link4": "",
+              "image5": "",
+              "link5": "",
+              "image6": "",
+              "link6": ""
+            }
+          }
+        },
+        "block_order": [
+          "1523802549962",
+          "1521546964528",
+          "1525034874613",
+          "1525035121247"
+        ],
+        "settings": {
+        }
+      },
+      "feature-columns-custom2": {
+        "type": "feature-columns-custom2",
+        "blocks": {
+          "1521544169940": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/28276384_10211986587720536_2341888912460033590_n_e699f346-36d5-4603-b296-76491c1ab78d.jpg",
+              "title": "Adrian Piegsa",
+              "text": "<p><em>Conversion Rate&nbsp;Experte<\/em><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1521544227739": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/IMG_20180623_192852-22.jpg",
+              "title": "Ahmed Afifi",
+              "text": "<p><em>Shopify Frontend Experte<\/em><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524520258976": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Martin2.jpg",
+              "title": "Martin Kreienbaum",
+              "text": "<p><em>Performance Marketing Experte<\/em><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524520337050": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/leon_profile_small_20077c5a-c8dc-4104-9b86-f52aa7c7c861.jpg",
+              "title": "Leon Bertram",
+              "text": "<p><em>Analytics Experte<\/em><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524520961926": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/andre_profile.JPG",
+              "title": "André Röder",
+              "text": "<p><em>Coding Experte<\/em><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524521235322": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/kathykunz.JPG",
+              "title": "Kathy Kunz",
+              "text": "<p><em>Conversion Copywriting <br><\/em><em>(Freie Mitarbeiterin)<\/em><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1524521556498": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/22791576_10214533786960125_7521542594381777428_o.JPG",
+              "title": "Tobias Biberbach",
+              "text": "<p><em>Google AdWords &amp; Shopping Experte <br>(Freier Mitarbeiter)<\/em><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1521544169940",
+          "1521544227739",
+          "1524520258976",
+          "1524520337050",
+          "1524520961926",
+          "1524521235322",
+          "1524521556498"
+        ],
+        "settings": {
+          "title": "Das Tante-e Team:",
+          "align_text": "center",
+          "img_max_height": "337"
+        }
+      },
+      "feature-columns-custom3": {
+        "type": "feature-columns-custom3",
+        "blocks": {
+          "1521564729316": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Buzzmatic_Logo_300-breit.png",
+              "title": "SEO Experten",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1521564751476": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/rigma_f0161d39-533c-44c1-a5fb-49351a4d87a8.png",
+              "title": "Spezielle Tool Entwicklung",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1521564757646": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/eshop-guide-1_jpg.png",
+              "title": "Shopify Experten",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1525034101840": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/logo_new-4cb168333cb38d237d7e6e09b0dd540204b65269e8dd4345ab63c149f4ecde24.png",
+              "title": "Messenger Marketing",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1525034137059": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Haendlerbund_Logo_RGB.png",
+              "title": "Rechtsberatung",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1521564729316",
+          "1521564751476",
+          "1521564757646",
+          "1525034101840",
+          "1525034137059"
+        ],
+        "settings": {
+          "title": "Unsere Kooperationspartner",
+          "align_text": "center",
+          "img_max_height": "530"
+        }
+      },
+      "quotes2": {
+        "type": "quotes2",
+        "settings": {
+          "title": "Quotes",
+          "quote_1": "<p><em>Ich kenne die K&ouml;pfe hinter Tante-E seit langem und bin von ihrer Arbeitsweise beeindruckt. Schon damals habe ich die schnelle Auffassungsgabe gesch&auml;tzt, die es ihnen erm&ouml;glicht innerhalb k&uuml;rzester Zeit L&ouml;sungsans&auml;tze f&uuml;r h&ouml;chstkomplexe Situationen abzuleiten.<\/em><\/p>",
+          "author_1": "Stefan Menden | Managing Director DACH, Benelux & Scandinavia | Secret Escapes",
+          "image_1": "shopify:\/\/shop_images\/Stefan_Menden.jpg",
+          "quote_2": "<p><em>Die Expertise, die sich das Team innerhalb weniger Zeit aufgebaut hat, beeindruckt mich nach wie vor. Ich verfolge ihren Werdegang seit Bestehen von Tante-E und kann jedem, dem sich die Chance bietet mit ihnen zusammenzuarbeiten, Tante-E w&auml;rmstens empfehlen.<\/em><\/p>",
+          "author_2": "Connor Murphy | Managing Director investing in B2B SaaS & Machine Learning | Techstars",
+          "image_2": "shopify:\/\/shop_images\/Murphy.jpg",
+          "quote_3": "<p><em>Adrian von Tante-E nimmt sich jeder Herausforderung an und h&ouml;rt erst auf, wenn er eine zufriedenstellende L&ouml;sung f&uuml;r alle Seiten gefunden hat. Anstatt nach einer kurzfristigen und einfachen L&ouml;sung zu suchen, ist ihm wichtig, dass seine Arbeit immer nachhaltig und zum Wohle des Kunden ist. Wir haben Adrian immer als einen ehrlichen und positiven Partner zu sch&auml;tzen gelernt.<\/em><\/p>",
+          "author_3": "Martin Kreienbaum | Managing Director | Bertbaum Internet",
+          "image_3": "shopify:\/\/shop_images\/Martin.jpg"
+        }
+      },
+      "1524489674966": {
+        "type": "blank-space",
+        "settings": {
+          "height": "50"
+        }
+      },
+      "1524491880391": {
+        "type": "image-bar",
+        "blocks": {
+          "1524491880391-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/E_A_1580e8f7-cb0b-4ff2-948a-25982d4194dc.JPG",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "1524491880391-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Consider_Cologne.JPG",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1524491880391-0",
+          "1524491880391-1"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "1524492040987": {
+        "type": "image-bar",
+        "blocks": {
+          "1524492040987-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/StayColdApparel.JPG",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "1524492040987-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Supermommy_f5e7d070-0a16-4505-936a-4226799296f3.JPG",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1524492040987-0",
+          "1524492040987-1"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "1524492430972": {
+        "type": "quotes2",
+        "settings": {
+          "title": "Das sagen Andere Über uns:",
+          "quote_1": "<p><em>Ich kenne die K&ouml;pfe hinter Tante-E seit langem und bin von ihrer Arbeitsweise beeindruckt. Schon damals habe ich die <strong>schnelle Auffassungsgabe<\/strong> gesch&auml;tzt, die es ihnen erm&ouml;glicht innerhalb k&uuml;rzester Zeit<strong> L&ouml;sungsans&auml;tze f&uuml;r h&ouml;chstkomplexe Situationen<\/strong> abzuleiten.<\/em><\/p>",
+          "author_1": "Stefan Menden | Managing Director DACH, Benelux & Scandinavia | Secret Escapes",
+          "image_1": "shopify:\/\/shop_images\/StefanMenden.jpg",
+          "quote_2": "<p><em>Die <strong>Expertise<\/strong>, die sich das Team innerhalb weniger Zeit aufgebaut hat, <strong>beeindruckt mich nach wie vor<\/strong>. Ich verfolge ihren Werdegang seit Bestehen von Tante-E und kann jedem, dem sich die Chance bietet mit ihnen zusammenzuarbeiten, Tante-E <strong>w&auml;rmstens empfehlen<\/strong>.<\/em><\/p>",
+          "author_2": "Connor Murphy | Managing Director investing in B2B SaaS & Machine Learning | Techstars",
+          "image_2": "shopify:\/\/shop_images\/Connor.jpg",
+          "quote_3": "<p><em>Adrian von Tante-E <strong>nimmt sich<\/strong> <strong>jeder Herausforderung an<\/strong> und h&ouml;rt erst auf, wenn er eine zufriedenstellende L&ouml;sung f&uuml;r alle Seiten gefunden hat. Anstatt nach einer kurzfristigen und einfachen L&ouml;sung zu suchen, ist ihm wichtig, dass seine Arbeit immer <strong>nachhaltig und zum Wohle des Kunden<\/strong> ist. Wir haben Adrian immer als einen<strong> ehrlichen und positiven Partner zu sch&auml;tzen gelernt<\/strong>.<\/em><\/p>",
+          "author_3": "Stefan Maier und Damian Martone | Managing Director | Rigma.io",
+          "image_3": "shopify:\/\/shop_images\/rigma.JPG"
+        }
+      },
+      "1524582122327": {
+        "type": "headline",
+        "settings": {
+          "heading": "Das sind Einige unserer Referenzen:",
+          "layout": "center"
+        }
+      },
+      "action-button-portfolio": {
+        "type": "action-button-portfolio",
+        "settings": {
+          "title": "",
+          "text": "",
+          "button_label": "Spezielle Lösung anfragen",
+          "button_link": "shopify:\/\/pages\/kontaktformular"
+        }
+      },
+      "hero-aboutus": {
+        "type": "hero-aboutus",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/K1600_Slider_Image_Yellowish.JPG",
+          "overlay_text_color": "#ffffff",
+          "overlay_transparence": "#000000",
+          "trancparency_percent": "0.3",
+          "alignment": "center",
+          "title": "Willkommen bei Tante-E",
+          "text": "<p>Bei Tante-E verschmelzen die<strong>&nbsp;Ideale vom Tante-Emma-Laden<\/strong>&nbsp;mit der<strong>&nbsp;modernen E-Commerce Welt<\/strong>.&nbsp;<\/p>\n<p>Wir helfen dem Einzelhandel im Internet sich gegen Amazon &amp; Co. zu behaupten und das&nbsp;<strong>Bestm&ouml;gliche<\/strong>&nbsp;aus dem Shop und den Produkten&nbsp;<strong>herauszuholen.<\/strong><\/p>\n<p>Wir helfen dabei&nbsp;<strong>den Umsatz nachhaltig zu steigern<\/strong>&nbsp;und Online-Shops&nbsp;<strong>aufs n&auml;chste Level zu heben<\/strong>. Im Marketing, in der Shop Performance und auch in der Kundenbindung.<\/p>\n<p>Als Team aus festen und freien Mitarbeitern&nbsp;verbinden wir die Dynamik &amp; Flexibilit&auml;t einer kleinen Agentur&nbsp;mit der tiefen Expertise eines breiten Netzwerks an E-Commerce Profis. Das hilft uns Dir ma&szlig;geschneiderte L&ouml;sungen zu einem fairen Preis anbieten zu k&ouml;nnen.&nbsp;<\/p>",
+          "hero_size": "large",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1525026272831": {
+        "type": "action-button",
+        "settings": {
+          "full_width": true,
+          "section_title": "",
+          "text": "<p>Das klingt interessant? Dann schreib uns und lass uns&nbsp;austauschen&nbsp;ob und wie wir Dir helfen k&ouml;nnen. Wir freuen uns!<\/p>",
+          "text_size": "medium",
+          "text_align": "center",
+          "button_label": "Umsatz-Boost anfragen",
+          "button_link": "shopify:\/\/pages\/kontaktformular"
+        }
+      },
+      "1525026636328": {
+        "type": "blank-space",
+        "settings": {
+          "height": "10"
+        }
+      },
+      "feature-columns-product": {
+        "type": "feature-columns-product",
+        "blocks": {
+          "1525190886865": {
+            "type": "text_block",
+            "settings": {
+              "title": "DIY - Starter Paket",
+              "price": "299,00€",
+              "text": "<p>Wir implementieren f&uuml;r Dich ein Standard-Theme und geben Dir alles N&ouml;tige f&uuml;r einen erfolgreichen Start an die Hand.&nbsp;<\/p>\n<p>Perfekt f&uuml;r alle Do-It-Yourself Unternehmer.<\/p>",
+              "button_label": "Anfragen",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1525190892593": {
+            "type": "text_block",
+            "settings": {
+              "title": "Rundum Sorglos Starter Paket",
+              "price": "2999€",
+              "text": "<p>Wir setzen ein Theme Deiner Wahl auf, beraten Dich intensiv und nehmen&nbsp;kleinere individuelle Design-Anpassungen vor. Am Ende hast Du einen fertigen Shop, der&nbsp;bereit ist&nbsp;neue Ums&auml;tze&nbsp;f&uuml;r Dich zu generieren.<\/p>\n<p>Das perfekte Paket f&uuml;r alle Unternehmer, die&nbsp;sorgenfrei mit ihrem eigenen Shop Ums&auml;tze generieren m&ouml;chten.<\/p>",
+              "button_label": "Anfragen",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          },
+          "1525190895550": {
+            "type": "text_block",
+            "settings": {
+              "title": "Individuelle All Inclusive Lösung",
+              "price": "8999€",
+              "text": "<p>Wir setzen f&uuml;r Dich eine individuelle Shop-L&ouml;sung auf - perfekt auf Deine Bed&uuml;rfnisse&nbsp;zugeschnitten. Individuelle Designanpassungen, Implementierung von externen Plug-Ins und intensive Beratung&nbsp;sind&nbsp;all inclsusive.&nbsp;&nbsp;<\/p>\n<p>Das Paket f&uuml;r alle Unternehmer, die nach der perfekt individuell zugeschnittenen L&ouml;sung suchen.<\/p>",
+              "button_label": "Anfragen",
+              "button_link": "shopify:\/\/pages\/kontaktformular"
+            }
+          }
+        },
+        "block_order": [
+          "1525190886865",
+          "1525190892593",
+          "1525190895550"
+        ],
+        "settings": {
+          "title": "Conversion-optimierte Shop Setups",
+          "text": "<p>Egal ob Du ein schnelles &amp; simples Setup f&uuml;r den Start oder eine individuell auf Dich zugeschnittene L&ouml;sung haben m&ouml;chtest, wir helfen Dir dabei!<\/p>",
+          "align_text": "left"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "blocks": {
+          "1530046807313": {
+            "type": "hero",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Who-should-come-to-Unite-2017.jpg",
+              "overlay_text_color": "#ffffff",
+              "overlay_transparence": "#000000",
+              "trancparency_percent": "0.1",
+              "alignment": "center",
+              "title": "Headline",
+              "text": "<p>Into text...<\/p>",
+              "hero_size": "x-small",
+              "text_size": "medium",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1530057537662": {
+            "type": "menu",
+            "settings": {
+            }
+          },
+          "1530054465290": {
+            "type": "blank_space",
+            "settings": {
+              "height": "50"
+            }
+          },
+          "1530049803755": {
+            "type": "image_with_text",
+            "settings": {
+              "text_color": "#ffffff",
+              "image": "shopify:\/\/shop_images\/pexels-photo-450035.JPG",
+              "heading": "Youtube video broadcast",
+              "text": "<p>short description sentence<\/p>",
+              "button_label": "Discover epsiodes",
+              "button_link": "shopify:\/\/pages\/faqs",
+              "image_2": "shopify:\/\/shop_images\/IMG_20180508_161552.JPG",
+              "heading_2": "Meet the community",
+              "text_2": "<p>short description sentence<\/p>",
+              "button_label_2": "Discover personalities >",
+              "button_link_2": "shopify:\/\/blogs\/tante-e-blog",
+              "image_3": "shopify:\/\/shop_images\/writing-notes-idea-conference.JPG",
+              "heading_3": "The Tante-E Shopify Expertise blog",
+              "text_3": "<p>short description sentence<\/p>",
+              "button_label_3": "Discover personalities >",
+              "button_link_3": "shopify:\/\/blogs\/tante-e-blog"
+            }
+          },
+          "1530054588469": {
+            "type": "blank_space",
+            "settings": {
+              "height": "50"
+            }
+          },
+          "1530054407519": {
+            "type": "newsletter",
+            "settings": {
+              "subheading": "Join our newsletter:",
+              "show_background": true
+            }
+          },
+          "1530095392310": {
+            "type": "image_with_text",
+            "settings": {
+              "text_color": "#ffffff",
+              "image": "shopify:\/\/shop_images\/IMG_20180504_172232.JPG",
+              "heading": "Shopify Berlin Meetup",
+              "text": "",
+              "button_label": "Learn more >",
+              "button_link": "shopify:\/\/blogs\/tante-e-blog",
+              "image_2": "shopify:\/\/shop_images\/IMG_20180504_124624.JPG",
+              "heading_2": "Exclusive mastermind access",
+              "text_2": "",
+              "button_label_2": "Login >",
+              "button_link_2": "\/account",
+              "image_3": "",
+              "heading_3": "",
+              "text_3": "<p>=<\/p>",
+              "button_label_3": "",
+              "button_link_3": ""
+            }
+          }
+        },
+        "block_order": [
+          "1530046807313",
+          "1530057537662",
+          "1530054465290",
+          "1530049803755",
+          "1530054588469",
+          "1530054407519",
+          "1530095392310"
+        ],
+        "settings": {
+          "layout": "list",
+          "blog_show_author": true,
+          "blog_show_date": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "medium",
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "show_share_buttons": false
+        }
+      },
+      "meetup-blog": {
+        "type": "meetup-blog",
+        "blocks": {
+          "1530129824361": {
+            "type": "hero",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/backgr-02.png",
+              "overlay_text_color": "#ffffff",
+              "overlay_transparence": "#000000",
+              "trancparency_percent": "0.3",
+              "alignment": "center",
+              "title": "Come join us for the latest Berlin Shopify Meetup",
+              "text": "<p>&nbsp;Meet other Shopify entrepreneurs, discuss growing your business online, learn from some informative talks, and enjoy a beer or two! We host on a regular basis a Shopify Berlin meetup - in English and German language.<\/p>",
+              "hero_size": "x-small",
+              "text_size": "medium",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1530129872758": {
+            "type": "yt_video",
+            "settings": {
+              "yt_link": "YoA3UictEzs"
+            }
+          },
+          "1530130143515": {
+            "type": "logo_bar",
+            "settings": {
+              "title": "Our sponsors",
+              "logo_max_width": "300",
+              "bg_color": "#ffffff",
+              "image1": "shopify:\/\/shop_images\/WeWork-Logo_copy.jpg",
+              "link1": "https:\/\/www.wework.com\/",
+              "image2": "shopify:\/\/shop_images\/shopify-logo.png",
+              "link2": "https:\/\/www.shopify.com\/",
+              "image3": "shopify:\/\/shop_images\/Logo_rechtkant_Schrift_rechts_zentriert_150.png",
+              "link3": "http:\/\/tante-e.com\/",
+              "image4": "",
+              "link4": "",
+              "image5": "",
+              "link5": "",
+              "image6": "",
+              "link6": ""
+            }
+          },
+          "1530133299269": {
+            "type": "meetupticket",
+            "settings": {
+              "subheading": "October 8th",
+              "ticket_link": "https:\/\/ti.to\/haendlerbund\/pursuit-meetup"
+            }
+          },
+          "1530135485108": {
+            "type": "socialmenu",
+            "settings": {
+              "fb": "",
+              "yt": ""
+            }
+          },
+          "1530186940463": {
+            "type": "blank_space",
+            "settings": {
+              "height": "27"
+            }
+          },
+          "1530186339070": {
+            "type": "hero",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/backgr-02.png",
+              "overlay_text_color": "#ffffff",
+              "overlay_transparence": "#000000",
+              "trancparency_percent": "0.4",
+              "alignment": "center",
+              "title": "Our past meetups",
+              "text": "<p>You missed some of the past meetups and wonder how it was? No worries, we got your back! Here you find the highlights and some impressions of our previous meetups.<\/p>",
+              "hero_size": "x-small",
+              "text_size": "medium",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1530129824361",
+          "1530129872758",
+          "1530130143515",
+          "1530133299269",
+          "1530135485108",
+          "1530186940463",
+          "1530186339070"
+        ],
+        "settings": {
+        }
+      },
+      "community-blog": {
+        "type": "community-blog",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/backgr-02.png",
+          "overlay_text_color": "#ffffff",
+          "overlay_transparence": "#000000",
+          "trancparency_percent": "0.4",
+          "alignment": "center",
+          "title": "Shopify Community",
+          "text": "<p>W&ouml;chentlich stellen wir einen H&auml;ndler aus der deutschsprachigen Shopify Community vor. Hier siehst Du die &Uuml;bersicht der bisherigen H&auml;ndler.<\/p>",
+          "hero_size": "x-small",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": "",
+          "ad_1_url": "shopify:\/\/blogs\/tante-e-blog",
+          "ad_1_img": "shopify:\/\/shop_images\/Main_Bogo_Animation.gif",
+          "ad_2_url": "shopify:\/\/blogs\/tante-e-blog",
+          "ad_2_img": "shopify:\/\/shop_images\/Dynamic_Checkout.gif"
+        }
+      },
+      "podcast-blog": {
+        "type": "podcast-blog",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/backgr-02.png",
+          "overlay_text_color": "#ffffff",
+          "overlay_transparence": "#000000",
+          "trancparency_percent": "0.4",
+          "alignment": "center",
+          "title": "Unser Shopify Video-Podcast",
+          "text": "<p>W&ouml;chentlich treffen wir H&auml;ndler &amp; Experten aus der deutschsprachigen Shopify Community. Hier findest Du eine &Uuml;bersicht &uuml;ber unsere bisherigen Folgen.<\/p>",
+          "hero_size": "x-small",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": "",
+          "ad_1_url": "",
+          "ad_1_img": "",
+          "ad_2_url": "",
+          "ad_2_img": ""
+        }
+      },
+      "tante-e-blog": {
+        "type": "tante-e-blog",
+        "settings": {
+          "layout": "list",
+          "blog_show_author": true,
+          "blog_show_date": true
+        }
+      },
+      "main-blog": {
+        "type": "main-blog",
+        "blocks": {
+          "1530719411898": {
+            "type": "hero",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/backgr-02.png",
+              "overlay_text_color": "#ffffff",
+              "overlay_transparence": "#000000",
+              "trancparency_percent": "0.4",
+              "alignment": "center",
+              "title": "Tante-E Blog - Der Blog für deutsche Shopify Expertise",
+              "text": "<p>Entdecke unsere w&ouml;chentlichen Video-Podcasts mit Experten aus der deutschsprachigen Shopify Community, lerne Shopify H&auml;ndler im deutschsprachigen Raum kennen oder lerne Tipps &amp; Tricks in unserem Blog-Bereich<\/p>",
+              "hero_size": "x-small",
+              "text_size": "medium",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1530719457645": {
+            "type": "menu",
+            "settings": {
+            }
+          },
+          "1530719971588": {
+            "type": "blank_space",
+            "settings": {
+              "height": "50"
+            }
+          },
+          "1530719465397": {
+            "type": "image_with_text",
+            "settings": {
+              "text_color": "#ffffff",
+              "image": "shopify:\/\/shop_images\/Youtube_12254091-7f55-49a4-a2cb-b13ee6ebdf79.jpg",
+              "heading": "Unser Shopify Video-Podcast",
+              "text": "<p>W&ouml;chentlich treffen wir H&auml;ndler &amp; Experten aus der deutschsprachigen Shopify Community<\/p>",
+              "button_label": "Folgen entdecken >",
+              "button_link": "shopify:\/\/blogs\/podcast",
+              "image_2": "shopify:\/\/shop_images\/IMG_0253_Kopie_19e3adcb-4391-4cef-a5f7-995bc11df0f5.jpg",
+              "heading_2": "Shopify Community",
+              "text_2": "<p>&nbsp;W&ouml;chentlich stellen wir einen H&auml;ndler aus der deutschsprachigen Shopify Community vor<\/p>",
+              "button_label_2": "Community entdecken >",
+              "button_link_2": "shopify:\/\/blogs\/community",
+              "image_3": "shopify:\/\/shop_images\/pexels-photo-450035.JPG",
+              "heading_3": "Shopify Experten Blog",
+              "text_3": "<p>Wir teilen unsere Erfahrung, Tipps und Tricks rund um Shopify mit Dir in unseren Blog-Artikeln<\/p>",
+              "button_label_3": "Blog-Artikel entdecken >",
+              "button_link_3": "shopify:\/\/blogs\/tante-e-blog"
+            }
+          },
+          "1530719774221": {
+            "type": "newsletter",
+            "settings": {
+              "subheading": "Join our newsletter:",
+              "show_background": true
+            }
+          },
+          "1530719697908": {
+            "type": "image_with_text",
+            "settings": {
+              "text_color": "#ffffff",
+              "image": "shopify:\/\/shop_images\/IMG_0128_Kopie_87b39870-09e3-47de-b06f-48ff1b54c176.jpg",
+              "heading": "Shopify Berlin Meetup",
+              "text": "",
+              "button_label": "Mehr erfahren >",
+              "button_link": "shopify:\/\/blogs\/meetup",
+              "image_2": "shopify:\/\/shop_images\/Youtube_12254091-7f55-49a4-a2cb-b13ee6ebdf79.jpg",
+              "heading_2": "Berlin Mastermind Zugang",
+              "text_2": "",
+              "button_label_2": "Login >",
+              "button_link_2": "\/account\/login",
+              "image_3": "shopify:\/\/shop_images\/IMG_20180504_172232.JPG",
+              "heading_3": "Image with text",
+              "text_3": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+              "button_label_3": "",
+              "button_link_3": ""
+            }
+          }
+        },
+        "block_order": [
+          "1530719411898",
+          "1530719457645",
+          "1530719971588",
+          "1530719465397",
+          "1530719774221",
+          "1530719697908"
+        ],
+        "settings": {
+          "layout": "list",
+          "blog_show_author": true,
+          "blog_show_date": true
+        }
+      },
+      "expert-blog": {
+        "type": "expert-blog",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/backgr-02.png",
+          "overlay_text_color": "#ffffff",
+          "overlay_transparence": "#000000",
+          "trancparency_percent": "0.4",
+          "alignment": "center",
+          "title": "Tante-E Blog - Der Blog für deutsche Shopify Expertise",
+          "text": "<p>W&auml;hrend es im Englisch-sprachigen Raum bereits viele Blogs und Inhalte zu Shopify gibt, ist dies im Deutschsprachigen Raum noch eher selten. Wir m&ouml;chten unsere gemachte Erfahrung als Shop-Betreiber und Shopify Experten Beratung mit euch teilen und hoffen so dem ein oder anderen von euch helfen zu k&ouml;nnen.<\/p>",
+          "hero_size": "x-small",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": "",
+          "ad_1_url": "",
+          "ad_1_img": "",
+          "ad_2_url": "",
+          "ad_2_img": ""
+        }
+      },
+      "new-service-sec1": {
+        "type": "new-service-sec1",
+        "settings": {
+          "video_head": "Schnelle Shop-Anpassungen",
+          "video_head2": "Ohne böse Überraschungen",
+          "video_text": "Du möchtest Anpassungen in Deinem Shopify Shop vornehmen? Wir, als akkreditierte Shopify Experten, lassen deine Wünsche Realität werden. Schnelle Umsetzung. Sauberer Code. Planbarer Preis. Keine bösen Überraschungen.",
+          "youtube_video_url": "",
+          "new_hero": "shopify:\/\/shop_images\/wcover.png",
+          "bar1_head": "Transparenter Preis",
+          "bar1_text": "Du weisst jederzeit wie teuer & aufwändig deine Anpassungen werden.",
+          "bar2_head": "Akkreditierte Experten",
+          "bar2_text": "Sauberer Code von Experten anstatt böse Überraschungen am Ende.",
+          "bar3_head": "Schnelle Umsetzung",
+          "bar3_text": "Deine Anpassungen werden innerhalb von 1 Woche umgesetzt",
+          "hrs1_original_price": "",
+          "hrs1_sale_price": "75",
+          "hrs3_original_price": "",
+          "hrs3_sale_price": "",
+          "quate_1_header": "Schick uns eine unverbindliche Anfrage",
+          "quate_1_text": "Schreib uns eine Nachricht mit einer kurzen Beschreibung, der Anpassung, die du gerne vorgenommen hättest. Je mehr Info, desto besser.",
+          "quate_2_header": "Erhalte eine Aufwandskalkulation",
+          "quate_2_text": "Wir schicken dir eine Aufwandskalkulation mit daraus resultierendem Preis. Nun kannst Du Dich immer noch entscheiden ob Du dies umsetzen möchtest oder nicht.",
+          "quate_3_header": "Entspanne Dich während wir die Arbeit erledigen",
+          "quate_3_text": "Du möchtest die Anpassungen vornehmen? Perfekt! Nachdem wir das Geld via Paypal erhalten haben, beginnen wir direkt mit der Umsetzung.",
+          "quate_4_header": "Feiere deine neuen Anpassungen",
+          "quate_4_text": "Innerhalb von 4 Tagen haben wir die Anpassung vorgenommen. Du kannst Dich freuen und die Ergebnisse genießen.",
+          "customization_list_item1": "Anpassungen von Code",
+          "customization_list_item2": "Vornehmen von kleineren Theme- & Designanpassungen",
+          "customization_list_item3": "Beheben von Bugs & Fehlern im Design",
+          "customization_list_item4": "Technische Implementieren von Apps",
+          "other_list_item1": "Umgestaltung von kompletten Seiten & Abschnitten im Shop",
+          "other_list_item2": "Shop-Duplizierung & Dateneinpflege",
+          "other_list_item3": "Erarbeiten eines neuen Shop-Designs",
+          "other_list_item4": "",
+          "testi1_content": "Sehr netter Kontakt, guter und schneller Service!",
+          "testi1_title": "-Westwood Dynamite",
+          "testi2_content": "Super Service- schnell und unkompliziert",
+          "testi3_content": "Super Service. Kommunikation hat bestens funktioniert. Umsetzung war top und sehr schnell. Ich werde den Service zukünftig sicher nochmal in Anspruch nehmen.",
+          "testi2_title": "-luna2relax",
+          "testi3_title": "-skarabeos.kaufen",
+          "question1": "Wie finde ich heraus, ob meine Anpassung in die 1-Stunde Kategorie fällt?",
+          "answer1": "Schreib uns gerne eine Nachricht mit der Anpassung, die du gerne umsetzen möchtest. Wir schreiben dir dann wie aufwändig die Umsetzung und entsprechend der Preis wäre. Danach kannst du immer noch entscheiden, ob du die Umsetzung machen möchtest.",
+          "question2": "Was für Informationen benötigt Ihr von mir für die Preisanfrage?",
+          "answer2": "Je mehr Infos wir von dir haben, desto besser. Ideal sind auf jeden Fall: Deine myshopify-Domain und eine Beschreibung von der gewünschten Anpassung. Bei Designanpassungen sind Beispiele oder Vorlagen notwendig, um die bestmögliche Zufriedenheit sicherzustellen.",
+          "question3": "Kann ich auch größere Anpassungen von euch umsetzen lassen?",
+          "answer3": "Auf jeden Fall! Schick uns eine Nachricht mit einer Beschreibung der gewünschten Anpassungen. Im Anschluss können wir in einem Telefonat alle Details abstecken und den Aufwand für dieses Projekt für dich berechnen - so weisst du, ob du die Umsetzung mit uns machen möchtest.",
+          "question4": "Muss ich eine Anpassung bei euch vornehmen, sobald ich den Preis angefragt habe?",
+          "answer4": "Nein. du kannst gerne bei uns anfragen und dich danach immer noch gegen uns entscheiden. Erst ab dem Moment deiner Bezahlung beginnt das gemeinsame Projekt.",
+          "question5": "Wie funktioniert die Bezahlung?",
+          "answer5": "Du bezahlst den Betrag vorab an uns via Paypal. Sobald das Geld bei uns eingegangen ist, beginnen wir mit der Arbeit."
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_share_buttons": true
+        }
+      },
+      "meetup-article-logo-bar": {
+        "type": "meetup-article-logo-bar",
+        "blocks": {
+          "1532095768456": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/WeWork-Logo_copy.jpg",
+              "link": "https:\/\/www.wework.com\/"
+            }
+          },
+          "1532095822556": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shopify-logo.png",
+              "link": "https:\/\/shopify.com"
+            }
+          },
+          "1532095966572": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Logo_rechtkant_Schrift_rechts_zentriert_150.png",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1532095768456",
+          "1532095822556",
+          "1532095966572"
+        ],
+        "settings": {
+          "title": "OUR SPONSORS",
+          "logo_max_width": "300",
+          "bg_color": "#ffffff"
+        }
+      },
+      "hero-freeaudit": {
+        "type": "hero-freeaudit",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/backgr-02.png",
+          "alignment": "center",
+          "title": "Gewinne eine von fünf kostenlosen Audits für deinen Shop",
+          "text": "<p>Du m&ouml;chtest weiteres Optimierungspotential aufgedeckt bekommen und m&ouml;gliche Conversion Barrieren in deinem Shop entdecken?<\/p>\n<p><\/p>\n<p>Wir helfen dir dabei! In unserer Shop-Audit gehen wir St&uuml;ck f&uuml;r St&uuml;ck durch jeden Abschnitt deines Shops und pr&uuml;fen ihn auf Optimierungsm&ouml;glichkeiten &amp; Best-Practices.&nbsp;<\/p>",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "free-audit": {
+        "type": "free-audit",
+        "settings": {
+          "title": "Wie du dich für die Shop Audit qualifizieren kannst",
+          "subtitle": "<p>F&uuml;lle einfach die obenstehende Form aus &nbsp;und sichere dir die Chance auf:<\/p>",
+          "image": "shopify:\/\/shop_images\/banner.jpg",
+          "image2": "shopify:\/\/shop_images\/blur-business-computer-230544_copy.jpg",
+          "pt1": "Expertenfeedback zu deinem Shop",
+          "pt2": "Vergleiche zu anderen E-Commerce Playern & Best-Practices",
+          "pt3": "Konkrete Handlunhsempfehlungen deinen Shop zu optimieren",
+          "pt4": ""
+        }
+      },
+      "1539535554333": {
+        "type": "text-culomns-home-before-footer",
+        "blocks": {
+          "1539535554333-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Performance Marketing",
+              "text": "<p>Wir helfen Dir Deine Bekanntheit zu steigern und mehr Besucher auf Deinen Shop aufmerksam zu machen.&nbsp;<\/p>\n<p>Facebook Advertising |&nbsp;Google AdWords &amp; Shopping |&nbsp;SEO: On-Site Optimierung<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1539535554333-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "Shop-Optimierung",
+              "text": "<p>Wir helfen Dir das Bestm&ouml;gliche aus Deinem Shop herauszuholen und mehr Deiner Besucher vom Kauf zu &uuml;berzeugen.<\/p>\n<p>Conversion Rate Optimierung | Implementierung von Best-Practices<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1539535554333-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Customer Relationship Management",
+              "text": "<p>Wir helfen Dir Deinen durchschnittlichen Warenkorbwert sowie die Customer Lifetime Value Deiner Kunden zu steigern.<\/p>\n<p>E-Mail Automatisierung | E-Mail Marketing Optimierung | Facebook Messenger Automatisierung<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1539535554333-0",
+          "1539535554333-1",
+          "1539535554333-2"
+        ],
+        "settings": {
+          "title": "DAS SIND UNSERE STÄRKEN:",
+          "align_text": "center",
+          "img_max_height": "530"
+        }
+      },
+      "our-work-hero": {
+        "type": "our-work-hero",
+        "settings": {
+          "image": "",
+          "overlay_text_color": "#ffffff",
+          "overlay_transparence": "#000000",
+          "trancparency_percent": "0.3",
+          "alignment": "center",
+          "title": "OUR",
+          "title2": "WORK",
+          "title3": "Proud Of Our Previous Work",
+          "text": "<p><strong>incididuntut laboreet<\/strong> dolore magna aliqua.Ut enim ad&nbsp;incididuntut laboreet dolore magna aliqua.Ut enim ad&nbsp;<\/p>\n<p><strong>incididuntut laboreet dol<\/strong>ore magna aliqua.Ut enim ad&nbsp;incididuntut laboreet dolore mag<strong>na aliqua<\/strong>.Ut enim ad&nbsp;incididuntut laboreet dolore magna aliqua.Ut enim ad&nbsp;<\/p>\n<p>incididuntut laboreet dolore magna aliqua.Ut enim ad&nbsp;incididuntut laboreet dolore <strong>magna aliqua.Ut<\/strong> enim ad&nbsp;<\/p>",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "shop-custimization-section": {
+        "type": "shop-custimization-section",
+        "blocks": {
+          "1541410236702": {
+            "type": "project_item",
+            "settings": {
+              "preview_width": "two_thirds_right",
+              "preview_image": "shopify:\/\/shop_images\/thumbnails-mission-burrito-02-1-w843h530_1.jpg",
+              "preview_image_mob": "shopify:\/\/shop_images\/thumbnails-mission-burrito-02-1-w400h265.jpg",
+              "item_head": "Project Head",
+              "item_content": "<p>-Project Description<\/p>\n<p>-Project Description<\/p>\n<p>-Project Description<\/p>",
+              "color": "rgb(241,59,98,0.9)",
+              "project_page": "shopify:\/\/blogs\/community\/matthias-team-von-generation-yes"
+            }
+          },
+          "1541410349659": {
+            "type": "project_item",
+            "settings": {
+              "preview_width": "one_third",
+              "preview_image": "shopify:\/\/shop_images\/thumbnails-chester-zoo-03-1-w417h530_8efd7ec9-a74d-4abb-9be7-b0d8c7a98315.jpg",
+              "preview_image_mob": "shopify:\/\/shop_images\/thumbnails-chester-zoo-03-1-w400h265.jpg",
+              "item_head": "Project Head",
+              "item_content": "<p>Project Head<\/p>\n<p>Project Head<\/p>\n<p>Project Head<\/p>",
+              "color": "rgb(241,59,98,0.9)",
+              "project_page": ""
+            }
+          }
+        },
+        "block_order": [
+          "1541410236702",
+          "1541410349659"
+        ],
+        "settings": {
+        }
+      },
+      "online-marketing-section": {
+        "type": "online-marketing-section",
+        "settings": {
+        }
+      },
+      "crm-section": {
+        "type": "crm-section",
+        "settings": {
+        }
+      },
+      "shop-setup-projects": {
+        "type": "shop-setup-projects",
+        "blocks": {
+          "1541492420734": {
+            "type": "project_item",
+            "settings": {
+              "preview_width": "two_thirds_right",
+              "preview_image": "shopify:\/\/shop_images\/thumbnails-mission-burrito-02-1-w843h530_1.jpg",
+              "preview_image_mob": "shopify:\/\/shop_images\/thumbnails-mission-burrito-02-1-w400h265.jpg",
+              "item_head": "Project Head",
+              "item_content": "<p>-Project Head<\/p>\n<p>-Project Head<\/p>\n<p>-Project Head<\/p>\n<p>-Project Head<\/p>",
+              "color": "#F13B62",
+              "project_page": "shopify:\/\/blogs\/tante-e-blog\/8-einfache-schritte-wie-migriere-ich-meinen-online-shop-zu-shopify"
+            }
+          },
+          "1541492511487": {
+            "type": "project_item",
+            "settings": {
+              "preview_width": "one_third",
+              "preview_image": "shopify:\/\/shop_images\/thumbnails-chester-zoo-03-1-w417h530_8efd7ec9-a74d-4abb-9be7-b0d8c7a98315.jpg",
+              "preview_image_mob": "shopify:\/\/shop_images\/thumbnails-chester-zoo-03-1-w400h265.jpg",
+              "item_head": "Project Head",
+              "item_content": "<p>Project Head<\/p>\n<p>Project Head<\/p>\n<p>Project Head<\/p>",
+              "color": "#6C7B93",
+              "project_page": ""
+            }
+          }
+        },
+        "block_order": [
+          "1541492420734",
+          "1541492511487"
+        ],
+        "settings": {
+        }
+      },
+      "slideshow-new-design": {
+        "type": "slideshow-new-design",
+        "blocks": {
+          "1546861778570": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/heero1.jpg",
+              "alignment": "top",
+              "title": "ALL YOU NEED TO CREATE A WEBSITE.",
+              "subheading": "TANTE-E. DIE ERSTE SHOPIFY BERATUNG DEUTSCHLANDS MIT FOKUS AUF NACHHALTIGER  SHOP-PERFORMANCE OPTIMIERUNG.",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1546861778570"
+        ],
+        "settings": {
+          "autoplay": true,
+          "autoplay_speed": "7000",
+          "slideshow_height": "medium",
+          "text_size": "medium"
+        }
+      }
+    },
+    "content_for_index": [
+      "1520180425371",
+      "1520180510796",
+      "1524489674966",
+      "1524582122327",
+      "1524491880391",
+      "1525026636328",
+      "1524492040987",
+      "1520180725483",
+      "1520355336060",
+      "1524492430972",
+      "1539535554333",
+      "1525026272831"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#788188",
+      "color_sale_text": "#7796A8",
+      "color_borders": "#e8e9eb",
+      "color_button": "#7796A8",
+      "color_button_text": "#fff",
+      "color_small_button": "#fff",
+      "color_small_button_text": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": 25,
+      "color_body_bg": "#fff",
+      "type_header_family": "Google_Work+Sans_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Work+Sans_400_sans",
+      "type_base_size": "16px",
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist_two": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#757575",
+      "color_sale_text": "#ff574f",
+      "color_borders": "#e4e4e4",
+      "color_button": "#ff574f",
+      "color_button_text": "#ffffff",
+      "color_small_button": "#eaeaea",
+      "color_small_button_text": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 30,
+      "color_body_bg": "#f8f8f8",
+      "type_header_family": "Google_Muli_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Muli_600_sans",
+      "type_base_size": "18px",
+      "type_bold_product_titles": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": "135",
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist": "main-menu",
+            "footer_linklist_two": "footer",
+            "footer_newsletter_enable": true,
+            "show_payment_icons": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "enable_zoom": true,
+            "show_share_buttons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": "2",
+            "rows": "2",
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {
+          }
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {
+          }
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

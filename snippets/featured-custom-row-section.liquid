@@ -1,0 +1,205 @@
+
+<style>
+  .fr2 .feature-row__image-wrapper{margin:0px;}
+  .fr2 .featured-row__subtext p, .fr2 .feature-row__text h3{color:{{block.settings.text_color}};}
+  .fr2 .feature-row__text--right{padding-left:10px;}
+
+    .contnet-wrapper{ max-width:500px; padding:10px; display:inline-block;}
+
+    .fr2-{{block.id}} .cover-img-1{
+
+         background: url({{ block.settings.image | img_url: '800x800' }}) no-repeat;
+         background-size: cover;
+         background-position: center;
+    }
+
+    .fr2-{{block.id}} .cover-img-2{
+
+         background: url({{ block.settings.image_2 | img_url: '600x600' }}) no-repeat;
+         background-size: cover;
+    }
+
+
+
+    .custom-flex{
+      align-items: center;
+    display: flex;
+    }
+    .fr2-{{block.id}} .cover-img-2{
+         background: url({{ block.settings.image_2 | img_url: '600x600' }}) no-repeat;
+         background-size: cover;
+       }
+    .fr2-{{block.id}} .cover-img-2 .img-wrapper{
+         padding-bottom: 35px;
+    }
+
+
+    .fr2-{{block.id}} .cover-img-3{
+         background: url({{ block.settings.image_3 | img_url: '600x600' }}) no-repeat;
+         background-size: cover;
+       }
+    .fr2-{{block.id}} .cover-img-3 .img-wrapper{
+         padding-bottom: 10px;
+    }
+
+    .fr2-{{block.id}} .feature-row{ align-items: stretch;}
+
+
+    .img-wrapper{
+      width: 100%; height: 100%;
+       background-color: rgba(0,0,0,0.4); padding-top: 35px;
+       padding-bottom: 35px;
+       display: flex; align-items: center; justify-content: center; flex-direction: column;
+     }
+    @media only screen and (min-width: 750px)
+    {
+      .feature-row__text--left {
+        padding-left: 0px;
+        }
+        .img-wrapper  {padding-left: 35px;}
+    }
+
+    .feature-row__text {
+    padding-top: 0px;
+    padding-bottom: 0px;
+     }
+
+</style>
+
+<div class="">
+
+
+
+<div class="feature-row fr2 fr2-{{block.id}}">
+
+  <div class="feature-row">
+
+
+    <div class="feature-row__item feature-row__text feature-row__text--left text-left custom-flex cover-img-1">
+      <div class="img-wrapper">
+      <div class="contnet-wrapper small--text-center">
+        {% if block.settings.heading != blank %}
+        <h3>{{ block.settings.heading }}</h3>
+        {% endif %}
+
+        {% if block.settings.text != blank %}
+        <div class="rte-setting featured-row__subtext" style="">{{ block.settings.text }}</div>
+        {% endif %}
+
+        {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+        <a href="{{ block.settings.button_link }}" class="btn btn-wider">
+          {{ block.settings.button_label | escape }}
+        </a>
+        {% endif %}
+      </div>
+      </div>
+    </div>
+
+
+
+{% if block.settings.heading_3 != blank and block.settings.text_3 != blank and block.settings.button_label_3 != blank and block.settings.button_link_3 != blank %}
+
+{% comment %}in clase of 3 blocks increas the height {% endcomment %}
+<style type="text/css">
+      .fr2-{{block.id}} .feature-row{ min-height: 500px;}
+      .fr2-{{block.id}} .feature-row .img-wrapper{ min-height: 250px;}
+</style>
+
+
+    <div class="feature-row__item ">
+      <div class="feature-row" style="flex-direction: column;">
+
+        <div class="feature-row__item feature-row__text feature-row__text--left text-left custom-flex cover-img-2" style="flex-grow: 1;">
+          <div class="img-wrapper ">
+            <div class="contnet-wrapper small--text-cente">
+          {% if block.settings.heading_2 != blank %}
+          <h3>{{ block.settings.heading_2 }}</h3>
+          {% endif %}
+
+          {% if block.settings.text_2 != blank %}
+          <div class="rte-setting featured-row__subtext" style="">{{ block.settings.text_2 }}</div>
+          {% endif %}
+
+          {% if block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %}
+          <a href="{{ block.settings.button_link_2 }}" class="btn page-width">
+            {{ block.settings.button_label_2 | escape }}
+          </a>
+          {% endif %}
+        </div>
+        </div>
+        </div>
+
+        <div class="feature-row__item feature-row__text feature-row__text--left text-left custom-flex cover-img-3"
+        style="flex-grow: 1;">
+          <div class="img-wrapper text-left">
+            <div class="contnet-wrapper small--text-cente">
+          {% if block.settings.heading_3 != blank %}
+          <h3>{{ block.settings.heading_3 }}</h3>
+          {% endif %}
+
+          {% if block.settings.text_3 != blank %}
+          <div class="rte-setting featured-row__subtext" style="">{{ block.settings.text_3 }}</div>
+          {% endif %}
+
+          {% if block.settings.button_label_3 != blank and block.settings.button_link_3 != blank %}
+          <a href="{{ block.settings.button_link_3 }}" class="btn page-width">
+            {{ block.settings.button_label_3 | escape }}
+          </a>
+          {% endif %}
+        </div>
+      </div>
+        </div>
+
+      </div>
+
+    </div>
+
+{% else %}
+
+<style type="text/css">
+      .fr2-{{block.id}} .feature-row{ min-height: 250px;}
+</style>
+
+    <div class="feature-row__item feature-row__text feature-row__text--left text-left custom-flex cover-img-2">
+          <div class="img-wrapper text-left">
+
+      <div class="contnet-wrapper small--text-center">
+        {% if block.settings.heading_2 != blank %}
+        <h3>{{ block.settings.heading_2 }}</h3>
+        {% endif %}
+
+        {% if block.settings.text_2 != blank %}
+        <div class="rte-setting featured-row__subtext" style="">{{ block.settings.text_2 }}</div>
+        {% endif %}
+
+        {% if block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %}
+        <a href="{{ block.settings.button_link_2 }}" class="btn page-width">
+          {{ block.settings.button_label_2 | escape }}
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    </div>
+
+
+{% endif %}
+
+
+  </div>
+
+</div>
+
+
+
+</div>
+
+<script>
+  setTimeout(function(){
+   $(document).ready( function(){
+      $('.fr2').each(function(){
+      $(this).parents('.index-block').css({'padding':'0px'});
+      })
+    });
+  }, 200);
+
+</script>

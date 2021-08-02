@@ -1,0 +1,489 @@
+<style type="text/css">
+  .meetup-blog .logo-bar__item {
+    max-width: 200px;
+}
+</style>
+<div class="meetup-blog">
+      {% for block in section.blocks %}
+        <div class="{% if block.type == 'logo_bar'%} index-section{%endif%}" {{ block.shopify_attributes }}>
+          {% case block.type %}
+            {% when 'hero' %}
+              
+              {%include 'hero-section'  %}
+
+            {% when 'newsletter' %}
+            <div class="page-width">
+              {% include 'newsletter-section'%}
+            </div>
+            {% when 'actionbutton' %}
+              {% include 'action-button-section'%}
+          
+            {% when 'image_with_text' %}
+              {% include 'featured-custom-row-section' with {block: block} %}  
+
+          
+            {% when 'logo_bar' %}
+              <div class="page-width">
+              {% include 'logo-bar-section'%}            
+              </div>
+          
+            {% when 'blank_space' %}
+              {% include 'blank-space-section'%}
+          
+            {% when 'menu' %}
+              {% include 'blog-menu'%}
+          
+          
+            {% when 'yt_video' %}
+            <div class="page-width">
+              {% include 'youtube-video'%}
+            </div>
+
+            {% when 'meetupticket' %}
+              {% include 'meetup-ticket'%}
+          
+          
+            {% when 'socialmenu' %}
+              {% include 'blog-social-menu'%}
+          
+          
+             {% endcase %}
+        </div>
+      {% endfor %}
+  </div>
+
+
+
+<style type="text/css">
+  
+  .posts-container h2{ padding: 20px 0px; }
+  .posts-container .grid__item{
+    padding-bottom: 30px;
+    color: #FFF;
+  }
+  .post-wrapper .rte {
+    /*position: absolute;*/
+    bottom: 5px;
+    color: #FFF;
+  }
+
+
+  .post-wrapper{
+    position: relative;
+  }
+
+  .wrapper-transparent{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   
+  }
+  .post-wrapper .article__title {
+    margin: 10px auto;
+   }
+   .post-wrapper .post-meta{
+    color: #cac7c7;
+    } 
+
+    .article__grid-image-wrapper{     min-height: 350px; }
+
+</style>
+<div class="page-width posts-container">
+{% comment %}<h2 class="h2">Most recent published content:</h2>{% endcomment %}
+<div class="grid ">
+
+  {% for article in blogs.meetup.articles %}
+
+  <div class="grid__item medium-up--one-half" >
+
+    <a href="{{ article.url }}">
+    <div class="post-wrapper" style="background:url() no-repeat; background-size: cover;">
+        <div class="wrapper-transparent">
+
+          <a href="{{ article.url }}">
+            <div class="article__grid-image-wrapper js" style="background:url({{ article.image | img_url: '600x600' }}) no-repeat; background-size: cover;">
+            </div>
+          </a>
+
+
+
+        <h3 class="article__title h3">
+          <a href="{{ article.url }}" style="color: #000;">{{ article.title }}</a>
+        </h3>
+
+        <div class="rte article__grid-excerpt text-center">
+          <a href="{{ article.url }}" class="btn" style="width: 100%;">More</a>
+        </div>
+
+      </div>
+    </div>
+    </a>
+
+  </div>
+
+  {% endfor %}
+</div>
+</div>
+
+
+
+<div style="background-color: #e1e1e1; padding: 20px 0px;">
+  <div class="page-width">
+
+    <h2 class="h2">About the organizer:</h2>
+
+    <div class="grid">
+      <div class="grid__item medium-up--one-third">
+        <img src="https://cdn.shopify.com/s/files/1/0003/7729/0803/files/28276384_10211986587720536_2341888912460033590_n_cut_large.jpg?v=1526849543" alt="Adrian Piegsa - Shopify Expert" width="217" height="198">
+      </div>
+
+      <div class="grid__item medium-up--two-thirds">
+      <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adrian Piegsa is the German Shopify expert at Tante-E.com</font></font></strong><span>&nbsp;</span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> and helps shop operators increase the turnover of their Shopify shop. </font><font style="vertical-align: inherit;">In addition to advising Shopify Shops in Germany on the topic of performance optimization, he and his team currently operate three online shops, of course on the basis of Shopify. </font><font style="vertical-align: inherit;">He is also the organizer of the Berlin Shopify Meetups and now shares his knowledge in blog posts as well as in his video podcasts.</font></font>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "Meetup Blog page",
+
+
+    "blocks":
+    [
+
+
+      {
+        "type": "hero",
+        "name": "Hero",
+        "settings": [
+          {        
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+          },
+          {
+          "type":"color",
+          "id":"overlay_text_color",
+          "label":"Overlay text color",
+          "default":"#FFFFFF"
+          },
+          {
+          "type":"color",
+          "id":"overlay_transparence",
+          "label":"Overlay Transparent color",
+          "default":"#000000"
+          },
+          {
+            "type": "select",
+            "id": "trancparency_percent",
+            "label": "Transparency percent",
+            "default": "0.3",
+            "options": [
+              {
+                "label": "10%",
+                "value": "0.1"
+              },
+              {
+                "label": "20%",
+                "value": "0.2"
+              },
+              {
+                "label": "30%",
+                "value": "0.3"
+              },
+              {
+                "label": "40%",
+                "value": "0.4"
+              },
+              {
+                "label": "50%",
+                "value": "0.5"
+              },
+              {
+                "label": "60%",
+                "value": "0.6"
+              },
+              {
+                "label": "70%",
+                "value": "0.7"
+              },
+              {
+                "label": "80%",
+                "value": "0.8"
+              },
+              {
+                "label": "90%",
+                "value": "0.9"
+              },
+              {
+                "label": "100%",
+                "value": "1"
+              }
+            ]
+          },
+      {
+        "type": "select",
+        "id": "alignment",
+        "label": "Image alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Image with text overlay"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+          },
+          {
+            "type": "select",
+            "id": "hero_size",
+            "label": "Section height",
+            "default": "medium",
+            "options": [
+              {
+                "label": "Extra Small",
+                "value": "x-small"
+              },
+              {
+                "label": "Small",
+                "value": "small"
+              },
+              {
+                "label": "Medium",
+                "value": "medium"
+              },
+              {
+                "label": "Large",
+                "value": "large"
+              },
+              {
+                "label": "Extra Large",
+                "value": "x-large"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "text_size",
+            "label": "Text size",
+            "default": "medium",
+            "options": [
+              {
+                "label": "Medium",
+                "value": "medium"
+              },
+              {
+                "label": "Large",
+                "value": "large"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          }
+    ]
+      },
+
+
+
+
+ {
+    "name": "Youtube Video",
+    "type": "yt_video",
+    "settings": [
+      {
+        "type":"text",
+        "label":"Youtube video code (..?v=code)",
+        "id":"yt_link"
+      }
+      ]
+},
+
+
+
+
+        {
+    "name": "Logo list",
+    "type": "logo_bar",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Logo list"
+      },
+      {
+        "type": "text",
+        "id": "logo_max_width",
+        "label": "Logo max width (in pixels)",
+        "default": "300"
+      },
+    {
+    "type":"color",
+    "id":"bg_color",
+    "label":"background color",
+    "default":"#FFFFFF"
+    },
+
+          {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Logo 1"
+          },
+          {
+            "type": "url",
+            "id": "link1",
+            "label": "Link",
+            "info": "Optional"
+          },
+
+          {
+            "type": "image_picker",
+            "id": "image2",
+            "label": "Logo 2"
+          },
+          {
+            "type": "url",
+            "id": "link2",
+            "label": "Link",
+            "info": "Optional"
+          },
+
+          {
+            "type": "image_picker",
+            "id": "image3",
+            "label": "Logo 3"
+          },
+          {
+            "type": "url",
+            "id": "link3",
+            "label": "Link",
+            "info": "Optional"
+          },
+
+          {
+            "type": "image_picker",
+            "id": "image4",
+            "label": "Logo 4"
+          },
+          {
+            "type": "url",
+            "id": "link4",
+            "label": "Link",
+            "info": "Optional"
+          },
+
+          {
+            "type": "image_picker",
+            "id": "image5",
+            "label": "Logo 5"
+          },
+          {
+            "type": "url",
+            "id": "link5",
+            "label": "Link",
+            "info": "Optional"
+          },
+
+          {
+            "type": "image_picker",
+            "id": "image6",
+            "label": "Logo 6"
+          },
+          {
+            "type": "url",
+            "id": "link6",
+            "label": "Link",
+            "info": "Optional"
+          }
+    ]
+},
+{
+    "name": "meetup tickeet",
+    "type": "meetupticket",
+    "settings": [
+
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "next meetup date",
+        "default": "Join our newsletter: "
+      },
+      {
+        "type":"url",
+        "id":"ticket_link",
+        "label":"ticket link"
+      }
+      
+
+    ]
+  },
+
+
+  {
+    "name": "social submenu ",
+    "type": "socialmenu",
+    "settings": [
+
+      {
+        "type":"url",
+        "id":"fb",
+        "label":"Facebook link"
+      },
+      {
+        "type":"url",
+        "id":"yt",
+        "label":"Youtube link"
+      }
+
+  ]
+},
+{
+    "name": "Blank Space",
+    "type": "blank_space",
+    "settings": [
+    {
+      "type":"text",
+      "id":"height",
+      "label":"space height (in pixels)",
+      "default":"50"
+    } 
+  ]
+  }
+
+      ]
+
+
+}
+
+{% endschema%}

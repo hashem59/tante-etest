@@ -1,0 +1,437 @@
+<div class="page-width">
+
+
+    <div class="grid">
+      {% for block in section.blocks %}
+        <div class="service-itemh" {{ block.shopify_attributes }}>
+          {% case block.type %}
+            {% when 'hero' %}
+
+          		{%include 'hero-section'  %}
+                {% when 'featuredproduct' %}
+                    {% include 'featured-product-section'%}
+
+                {% when 'actionbutton' %}
+                    {% include 'action-button-section'%}
+
+                {% when 'blank_space' %}
+                    {% include 'blank-space-section'%}
+             {% endcase %}
+        </div>
+      {% endfor %}
+  </div>
+</div>
+
+
+<script>
+
+window.onload = function() {
+    if (window.jQuery) {
+        // jQuery is loaded
+      console.log("Yeah!");
+    if ($(window).width() >= 750) {
+        var h = $('.grid__item .rte-setting').eq(1).outerHeight();
+      	var h4h = $('.grid--flush-bottom .grid__item .h4').eq(1).outerHeight()
+        $('.grid__item .rte-setting').eq(2).css("minHeight", h);
+        $('.grid__item .rte-setting').eq(0).css("minHeight", h);
+      	$('.grid--flush-bottom .grid__item .h4').eq(0).css("minHeight", h4h)
+        // Products description height
+        var hfaceb = $('.service-itemh .product-single__description').eq(1).outerHeight()
+		$('.service-itemh .product-single__description').eq(0).css("minHeight", hfaceb)
+        var hSeo = $('.service-itemh .product-single__description').eq(3).outerHeight()
+		$('.service-itemh .product-single__description').eq(2).css("minHeight", hSeo)
+		var hShopH = $('.service-itemh .product-single__description').eq(5).outerHeight()
+		$('.service-itemh .product-single__description').eq(4).css("minHeight", hShopH)
+		var hCrateH = $('.service-itemh .product-single__description').eq(7).outerHeight()
+		$('.service-itemh .product-single__description').eq(6).css("minHeight", hCrateH)
+		var hmailH = $('.service-itemh .product-single__description').eq(9).outerHeight()
+        hmailH = hmailH -1;
+		$('.service-itemh .product-single__description').eq(8).css("minHeight", hmailH)
+        var tmailH = $('.service-itemh .product-single__title').eq(9).outerHeight()
+        $('.service-itemh .product-single__title').eq(8).css("minHeight", tmailH)
+
+        $(window).on('resize', function() {
+        var h = $('.grid__item .rte-setting').eq(2).outerHeight();
+      	var h4h = $('.grid--flush-bottom .grid__item .h4').eq(1).outerHeight()
+        $('.grid__item .rte-setting').eq(0).css("minHeight", h);
+        $('.grid__item .rte-setting').eq(1).css("minHeight", h);
+      	$('.grid--flush-bottom .grid__item .h4').eq(0).css("minHeight", h4h)
+        // Products description height
+        var hfaceb = $('.service-itemh .product-single__description').eq(1).outerHeight()
+		$('.service-itemh .product-single__description').eq(0).css("minHeight", hfaceb)
+        var hSeo = $('.service-itemh .product-single__description').eq(3).outerHeight()
+		$('.service-itemh .product-single__description').eq(2).css("minHeight", hSeo)
+		var hShopH = $('.service-itemh .product-single__description').eq(5).outerHeight()
+		$('.service-itemh .product-single__description').eq(4).css("minHeight", hShopH)
+		var hCrateH = $('.service-itemh .product-single__description').eq(7).outerHeight()
+		$('.service-itemh .product-single__description').eq(6).css("minHeight", hCrateH)
+		var hmailH = $('.service-itemh .product-single__description').eq(9).outerHeight()
+        hmailH = hmailH -1;
+		$('.service-itemh .product-single__description').eq(8).css("minHeight", hmailH)
+        var tmailH = $('.service-itemh .product-single__title').eq(9).outerHeight()
+        $('.service-itemh .product-single__title').eq(8).css("minHeight", tmailH)
+        })
+    }
+        //keep the height on window resize
+
+
+    } else {
+        // jQuery is not loaded
+        console.log("Doesn't Work");
+    }
+}
+
+</script>
+<style>
+  a.btn.product-form__cart-submit.product-form__cart-submit--small {max-width: 161px;}
+  .grid.product-single {display: flex;justify-content: center;}
+  .hero__inner .mega-title {color: #F13B62;}
+  .hero__inner .mega-subtitle {color: #6C7B93;}
+  .hero__inner {background: #E7ECED;}
+</style>
+{% schema %}
+  {
+    "name": "Our Services",
+    "blocks": [
+      {
+        "type": "hero",
+        "name": "Hero",
+		"settings": [
+          {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+          },
+		{
+		"type":"color",
+		"id":"overlay_text_color",
+		"label":"Overlay text color",
+		"default":"#FFFFFF"
+		},
+		{
+		"type":"color",
+		"id":"overlay_transparence",
+		"label":"Overlay Transparent color",
+		"default":"#000000"
+		},
+          {
+            "type": "select",
+            "id": "trancparency_percent",
+            "label": "Transparency percent",
+            "default": "0.3",
+            "options": [
+              {
+                "label": "10%",
+                "value": "0.1"
+              },
+              {
+                "label": "20%",
+                "value": "0.2"
+              },
+              {
+                "label": "30%",
+                "value": "0.3"
+              },
+              {
+                "label": "40%",
+                "value": "0.4"
+              },
+              {
+                "label": "50%",
+                "value": "0.5"
+              },
+              {
+                "label": "60%",
+                "value": "0.6"
+              },
+              {
+                "label": "70%",
+                "value": "0.7"
+              },
+              {
+                "label": "80%",
+                "value": "0.8"
+              },
+              {
+                "label": "90%",
+                "value": "0.9"
+              },
+              {
+                "label": "1000%",
+                "value": "1"
+              }
+            ]
+          },
+			{
+            "type": "select",
+            "id": "alignment",
+            "label": "Image alignment",
+            "default": "center",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "center",
+                "label": "Middle"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Image with text overlay"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+          },
+          {
+            "type": "select",
+            "id": "hero_size",
+            "label": "Section height",
+            "default": "medium",
+            "options": [
+              {
+                "label": "Extra Small",
+                "value": "x-small"
+              },
+              {
+                "label": "Small",
+                "value": "small"
+              },
+              {
+                "label": "Medium",
+                "value": "medium"
+              },
+              {
+                "label": "Large",
+                "value": "large"
+              },
+              {
+                "label": "Extra Large",
+                "value": "x-large"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "text_size",
+            "label": "Text size",
+            "default": "medium",
+            "options": [
+              {
+                "label": "Medium",
+                "value": "medium"
+              },
+              {
+                "label": "Large",
+                "value": "large"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          }
+    ]
+      },
+
+
+
+
+
+	 {
+        "type": "featuredproduct",
+        "name": "Featured product",
+		"settings":
+	[
+      {
+        "type": "product",
+        "id": "featured_product",
+        "label": "Product"
+      },
+      {
+        "type": "select",
+        "id": "image_size",
+        "label": "Image size",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          },
+          {
+            "value": "full",
+            "label": "Extra large"
+          }
+        ],
+        "default": "medium"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_quantity_selector",
+        "label": "Show quantity selector",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_variant_labels",
+        "label": "Show variant labels",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_zoom",
+        "label": "Enable image zoom",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_share_buttons",
+        "label": "Show social sharing buttons",
+        "default": true
+      },
+
+      {
+        "type": "checkbox",
+        "id": "force_action_redirect",
+        "label": "Force an action other than adding to cart",
+		"info":"to redirect user to specific page other than adding item to cart",
+        "default": false
+      },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label",
+			"info": "other than (add to cart)"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link",
+			"info":"url to redirect user to when clicking the button"
+          }
+
+    ]
+	},
+
+
+
+ {
+        "type": "actionbutton",
+        "name": "Action button",
+		"settings": [
+ {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Wide display"
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Heading",
+        "default": "Talk about your brand"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Size",
+        "default": "medium",
+        "options": [
+          {
+            "label": "Small",
+            "value": "small"
+          },
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "label": "left",
+            "value": "left"
+          },
+          {
+            "label": "center",
+            "value": "center"
+          },
+          {
+            "label": "right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+	]
+},
+
+  {
+    "name": "Blank Space",
+    "type": "blank_space",
+    "settings": [
+		{
+			"type":"text",
+			"id":"height",
+			"label":"space height (in pixels)",
+			"default":"50"
+		}
+	]
+	}
+
+]
+  }
+{% endschema %}

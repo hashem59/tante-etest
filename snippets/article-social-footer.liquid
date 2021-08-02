@@ -1,0 +1,79 @@
+<style type="text/css">
+
+
+  .sub-menu .article-social-nav{
+    margin:0px;
+    padding:25px ;
+  }
+
+  .article-social-nav .password__input-group{ margin-bottom: 0px; }
+  .article-social-nav li a{ display: inline-block; color: {{settings.color_button}}; }
+  .flex-grid{display: flex; align-items: center;}
+
+  @media only screen and (max-width: 749px){
+    .flex-grid{ flex-direction: column; }
+  }
+</style>
+
+
+
+
+
+<div style="background-color: #e1e1e1;">
+  <div class=" page-width text-center" style="padding: 20px 0px;">
+    
+    <div class="grid flex-grid" style="">
+
+
+
+    <div class="grid__item medium-up--one-third text-left small--text-center">
+    
+      <div class=" sub-menu"> 
+      <nav class="" id="AccessibleNav" role="navigation">
+        <ul class=" article-social-nav list--inline text-left small--text-center" id="SiteNav" >
+
+
+          
+            <li>
+              <h3  class="h4" style="margin: 5px auto;">Werde Teil der Community </h3>
+            </li>    
+            <li>
+              <a href="{{settings.social_facebook_link}}" class="site-nav__link site-nav__link--main">
+                {% include 'icon-facebook' %}
+              </a>
+              <a href="{{settings.social_youtube_link}}" class="site-nav__link site-nav__link--main">
+                {% include 'icon-youtube' %}
+               </a>
+            </li>   
+            
+          
+        
+        </ul>
+
+      </nav>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="grid__item medium-up--one-third text-left small--text-center">
+        <div class="block-header " >
+
+
+            <h3 class="h4" style="margin: 0px;" >Erhalte Tipps & Tricks zu Shopify direkt in Deine Inbox </h3>
+
+        </div>
+    </div>
+
+    <div class="grid__item medium-up--one-third text-right small--text-center">
+
+    {% include 'blog-chimp-newsletter' %}
+
+  </div>
+</div>
+
+</div>
+
+</div>

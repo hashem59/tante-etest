@@ -1,0 +1,112 @@
+<style type="text/css">
+   .right-column{ border-left: 1px solid #e1e1e1; }
+    .right-column .box-wrapper{ border-bottom: 1px solid #000; padding: 20px 0px; }
+    .articles li{
+      margin: 15px 0px;
+    }
+</style>
+  {% include 'blogtag-style' %}
+
+  <div class="box-wrapper">
+
+      <h3 class="h4" >Erhalte Tipps & Tricks direkt in Deine Inbox</h3>
+      <div class="medium-up--text-right small--text-center">
+
+        {% if blog.handle == 'meetup' %}
+              <a href="http://facebook.us15.list-manage.com/subscribe?u=2ec812678928546dde45a7098&id=e5850f5528" target="_blank" class="btn">Subscribe to our newsletter.</a>
+        {% else %}
+
+        {% include 'blog-chimp-newsletter' , full_width :'yes' %}
+
+        {% endif %}
+
+
+
+{% comment %}      {% form 'customer' %}
+        {{ form.errors | default_errors }}
+        {% if form.posted_successfully? %}
+          <p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
+        {% else %}
+          <div class="input-group password__input-group">
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <input type="email"
+              name="contact[email]"
+              id="Email"
+              class="input-group__field newsletter__input"
+              value="{% if customer %}{{ customer.email }}{% endif %}"
+              placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+              autocorrect="off"
+              autocapitalize="off">
+            <span class="input-group__btn">
+              <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
+                <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+              </button>
+            </span>
+          </div>
+        {% endif %}
+      {% endform %}{% endcomment %}
+
+      </div>
+    </div>
+
+
+
+    {% comment %}Second Box{% endcomment %}
+      <div class="box-wrapper">
+        <h3 class="h4" >Nach Themen filtern</h3>
+        <div>
+          
+          <ul class="tags">
+          {% for tag in blog.all_tags %}
+          <li >
+            <a class="tag" href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" >{{ tag }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        </div>
+    </div>
+
+
+    {% comment %}Thrid Box [Add banner 1 ] {% endcomment %}
+
+    {% if settings.ad_1_url != blank and settings.ad_1_img != blank %}
+    <div class="box-wrapper">
+      
+      <div class="ad-wrapper">
+        <a href="{{settings.ad_1_url}}">
+          <img src="{{settings.ad_1_img | img_url: '600x600'}}" />
+        </a>
+      </div>
+    </div>
+    {% endif %}
+
+
+
+    {% comment %}Thrid Box [Add banner 1 ] {% endcomment %}
+
+    {% if settings.ad_2_url != blank and settings.ad_2_img != blank %}
+    <div class="box-wrapper">
+      
+      <div class="ad-wrapper">
+        <a href="{{settings.ad_2_url}}">
+          <img src="{{settings.ad_2_img | img_url: '600x600'}}" />
+        </a>
+      </div>
+    </div>
+    {% endif %}
+
+
+    {% comment %}Fourth Box [Recent articles ]{% endcomment %}
+    <div class="box-wrapper">
+      <h3 class="h4" > Beliebteste Inhalte </h3>
+      <div>
+        
+        <ul class="articles">
+        {% for article in blog.articles limit:4 %}
+        <li >
+          <a class="" href="{{article.url}}" >{{ article.title }}</a>
+        </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>

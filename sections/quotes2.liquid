@@ -1,0 +1,192 @@
+<style>
+
+  .quotes2 img{
+    max-width:160px;
+    display: block;
+    margin: 50px auto 0px auto;
+  }
+  .quotes2 {
+  padding-top: 40px;
+  padding-bottom:40px;
+  background:#fff;
+  }
+  .quotes2 .grid{ margin:20px auto;}
+  .quotes2 cite{ color: {{settings.color_button}}; }
+  @media only screen and (max-width: 749px) {
+    .quate_img {padding:0;}
+  }
+</style>
+
+<div class="quotes2 " data-section-id="{{ section.id }}" data-section-type="quotes">
+  <div class="page-width">
+
+  {% if section.settings.title != blank %}
+    <div class="section-header text-center">
+      <h2>{{ section.settings.title | escape }}</h2>
+    </div>
+  {% endif %}
+
+
+
+	{% if section.settings.image_1 != blank %}
+      <div class="grid">
+          <div class="grid__item medium-up--one-quarter quate_img text-center">
+            <img src={{section.settings.image_1| img_url:'medium'}} />
+          </div>
+
+          <div class="grid__item medium-up--three-quarters ">
+              <blockquote class="quotes-slider__text text-center">
+                <span class="quote-icon">{% include 'icon-quote' %}</span>
+                {% if section.settings.quote_1 != blank %}
+                  <div class="rte-setting">{{ section.settings.quote_1 }}</div>
+                {% endif %}
+                {% if section.settings.author_1 != blank %}
+                  <cite>{{ section.settings.author_1 | escape }}</cite>
+                {% endif %}
+              </blockquote>
+          </div>
+  		</div>
+  	{%endif%}
+
+	{% if section.settings.image_2 != blank %}
+      <div class="grid">
+          <div class="grid__item medium-up--one-quarter quate_img text-center">
+            <img src={{section.settings.image_2| img_url:'medium'}} />
+          </div>
+
+          <div class="grid__item medium-up--three-quarters">
+              <blockquote class="quotes-slider__text text-center">
+                <span class="quote-icon">{% include 'icon-quote' %}</span>
+                {% if section.settings.quote_2 != blank %}
+                  <div class="rte-setting">{{ section.settings.quote_2 }}</div>
+                {% endif %}
+                {% if section.settings.author_2 != blank %}
+                  <cite>{{ section.settings.author_2 | escape }}</cite>
+                {% endif %}
+              </blockquote>
+          </div>
+  		</div>
+  	{%endif%}
+
+
+	{% if section.settings.image_3 != blank %}
+      <div class="grid">
+          <div class="grid__item medium-up--one-quarter quate_img text-center">
+            <img src={{section.settings.image_3| img_url:'medium'}} />
+          </div>
+
+          <div class="grid__item medium-up--three-quarters">
+              <blockquote class="quotes-slider__text text-center">
+                <span class="quote-icon">{% include 'icon-quote' %}</span>
+                {% if section.settings.quote_3 != blank %}
+                  <div class="rte-setting">{{ section.settings.quote_3 }}</div>
+                {% endif %}
+                {% if section.settings.author_3 != blank %}
+                  <cite>{{ section.settings.author_3 | escape }}</cite>
+                {% endif %}
+              </blockquote>
+          </div>
+  		</div>
+  	{%endif%}
+
+</div>
+</div>
+<style>
+  .quote-icon svg path {
+    fill:#ec1e79 !important;
+  }
+</style>
+{% schema %}
+  {
+    "name": "Testimonials",
+    "class": "index-section",
+
+	"settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Testimonials"
+      },
+
+
+	{
+		"type":"header",
+		"content":"Quote 1"
+	},
+	  {
+      "type": "richtext",
+      "id": "quote_1",
+      "label": "Text",
+      "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+      },
+      {
+      "type": "text",
+      "id": "author_1",
+      "label": "Author",
+      "default": "Author's name"
+      },
+	  {
+		"type":"image_picker",
+		"id":"image_1",
+		"label":"Image"
+		},
+
+
+	{
+		"type":"header",
+		"content":"Quote 2"
+	},
+	  {
+      "type": "richtext",
+      "id": "quote_2",
+      "label": "Text",
+      "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+      },
+      {
+      "type": "text",
+      "id": "author_2",
+      "label": "Author",
+      "default": "Author's name"
+      },
+	  {
+		"type":"image_picker",
+		"id":"image_2",
+		"label":"Image"
+		},
+
+
+
+	{
+		"type":"header",
+		"content":"Quote 3"
+	},
+	  {
+      "type": "richtext",
+      "id": "quote_3",
+      "label": "Text",
+      "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+      },
+      {
+      "type": "text",
+      "id": "author_3",
+      "label": "Author",
+      "default": "Author's name"
+      },
+	  {
+		"type":"image_picker",
+		"id":"image_3",
+		"label":"Image"
+		}
+
+
+    ],
+
+    "presets": [
+      {
+        "name": "Quotes",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}

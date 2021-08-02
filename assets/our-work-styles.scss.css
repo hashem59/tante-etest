@@ -1,0 +1,285 @@
+.placeholder-svg {
+  opacity: 0;
+}
+.mega-subtitle {max-width: none;}
+.sub-text {
+  padding-right: 25px;
+  display: block;
+  font-size: 17px;
+}
+span.pinky-text {
+  color: #F13B62;
+}
+.mega-subtitle strong {
+  font-weight: normal;
+  color: #F13B62;
+}
+h2.h1.mega-title {
+  font-size: 3.7em;
+}
+.ourwork_container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.projects-container {
+  overflow: hidden;
+}
+.tile-item {float: left;}
+.project-figure {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.preview-img {
+  width: 100%;
+  display: block;
+  max-width: none;
+}
+.c_overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-transition: all .4s cubic-bezier(.86,0,.07,1);
+  transition: all .4s cubic-bezier(.86,0,.07,1);
+  opacity: 0;
+}
+.two_thirds_right,.two_thirds_left {
+  width: 66.66%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.projects-container .tile-item:nth-child(odd) {
+    padding-right: 10px;
+}
+.projects-container .tile-item:nth-child(even) {
+    padding-left: 10px;
+}
+.one_third {
+  width: 33.33%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.two_thirds_right .c_overlay {
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(100%);
+  transform: translate(100%);
+  width: 300px;
+  height: 100%;
+}
+.two_thirds_left .c_overlay {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-100%);
+  transform: translate(-100%);
+  width: 300px;
+  height: 100%;
+}
+.one_third .c_overlay {
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  width: 100%;
+}
+.project-figure:hover .c_overlay {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  opacity: 1;
+}
+.c-panel > * {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.c-panel {
+  padding: 30px;
+  width: 100%;
+}
+a.project-link:hover,a.project-link:focus {
+  opacity: 1;
+}
+.c-panel-header.h2,.c-panel-eontent.h4 * {
+  color: #ffffff;
+}
+.projects-container .tile-item:nth-child(2n+1) {
+    clear: both;
+}
+.p-nav-wrab {
+  border-bottom: 1px solid #E7ECED;
+  margin-bottom: 30px;
+}
+.nav-tem-wr {
+  cursor: pointer;
+}
+.nav-item {
+  font-size: 1.4em;
+  margin: 0;
+  padding: 14px 0 15px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  bottom: -1px;
+}
+.nav-tem-wr.selected h3 {
+  border-bottom: 1px solid #F13B62;
+}
+@media screen and (max-width: 1022.99px) {
+  .one_third .c_overlay,.two_thirds_right .c_overlay,.two_thirds_left .c_overlay {
+    -webkit-transform: none;
+    transform: none;
+    position: static;
+    bottom: 0;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+
+  }
+  .two_thirds_right.tile-item,.one_third.tile-item,.two_thirds_left.tile-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 735px) {
+  .c_overlay {
+    min-height: 260px;
+  }
+}
+@media screen and (max-width: 734.99px) {
+  .two_thirds_right.tile-item,.one_third.tile-item,.two_thirds_left.tile-item {
+    width: 100%;
+    padding: 0;
+  }
+}
+#loader_wrap {
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  align-items: center;
+  padding: 5px;
+}
+/* handle the Nab tabs on mobile*/
+  .nav-arrow {
+    display: none;
+  }
+@media only screen and (max-width: 500px) {
+  .p-nav-wrab.nav-not-open .nav-tem-wr {
+    font-size: 14px;
+  }
+  .hero-text-wrap {
+    text-align: center !important;
+  }
+  .p-nav-wrab {
+    position: relative;
+  }
+  .p-nav-wrab.nav-not-open .nav-tem-wr {
+  max-height: 60px;
+  }
+  .p-nav-wrab.nav-not-open .nav-tem-wr {
+    max-height: 0;
+    opacity: 1;
+    font-size: 0;
+    -webkit-transition: max-height 0.5s; /* Safari */
+    transition: max-height 0.5s;
+  }
+
+  .p-nav-wrab.nav-not-open .nav-tem-wr.selected {
+    opacity: 1;
+    font-size: 14px;
+    max-height: 60px;
+  }
+  /* nadle the arrow*/
+  .nav-arrow {
+    position: absolute;
+    right: 29px;
+    top: 18%;
+    font-size: 29px;
+    color: #F13B62;
+    cursor: pointer;
+  }
+  .p-nav-wrab .nav-arrow.plus {
+    display: none;
+    top: 18%;
+  }
+  .p-nav-wrab .nav-arrow.minus {
+    display: block;
+    top: -1%;
+  }
+  .p-nav-wrab.nav-not-open .nav-arrow.plus {
+    display: block;
+  }
+  .p-nav-wrab.nav-not-open .nav-arrow.minus {
+    display: none;
+  }
+  /* end handle the arrow*/
+}
+
+/* css loader ------------*/
+
+.loader {
+  font-size: 7px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  background: #f13b62;
+  background: -moz-linear-gradient(left, #f13b62 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #f13b62 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #f13b62 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #f13b62 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #f13b62 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #f13b62;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background: #fff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/* end css loader---------*/

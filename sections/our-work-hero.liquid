@@ -1,0 +1,267 @@
+
+
+<style>
+  .hero__inner {
+    background-color:#E7ECED;
+    color: inherit;
+  }
+  .hero__inner .mega-title, .hero__inner .mega-subtitle{ color:inherit; }
+  .hero-text-wrap { padding: 30px;max-width: 990px;margin: 0 auto;width:95%;}
+   .template-index.mega-subtitle {max-width: none;}
+  ..hero__inner a.btn {box-shadow: 5px 10px 18px #494646;}
+  @media only screen and (min-width: 750px) {
+  	.template-index .hero--x-large {height: 950px !important;}
+  }
+ .template-index .hero__inner {
+    position: absolute;
+    top: 140px;
+
+  }
+  @media only screen and (max-width: 487px) {
+  .template-index .hero__inner {
+    top: 20px;
+
+  }
+  .template-index .hero__inner .mega-title {
+    font-size: 1em;
+
+  }
+   .template-index .hero__inner .mega-subtitle {
+     font-size: 1em;
+   }
+   .template-index .hero-text-wrap {
+     padding: 15px 10px;
+   }
+   .template-index .hero__inner .mega-subtitle {
+     margin: 0;
+   }
+   .template-index .hero__inner .btn {
+     margin: 8px auto;
+    padding: 5px 7px;
+    font-size: 12px;
+   }
+	  .template-index .hero--x-large {
+		 /* height: 800px;*/
+	  }
+  }
+
+
+</style>
+
+<div class="hero our_work hero--{{ section.settings.hero_size }}{% if section.settings.title != blank or section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %} box ratio-container lazyload js"
+     {% if section.settings.image %}
+     data-bgset="{% include 'bgset', image: section.settings.image %}"
+     data-sizes="auto"
+     data-parent-fit="cover"
+     style="background-position: {{ section.settings.alignment }}; background-image: url('{{ section.settings.image | img_url: '1200x1200' }});"
+     {% endif %}>
+     <img src="{{ section.settings.image | img_url: '1000x1000' }}" style="opacity:0;visibility:hidden;width:auto;height:100%;position:relative;" alt="">
+  {% if section.settings.image == blank %}
+    <div class="placeholder-background">
+      {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {% endif %}
+  <div class="hero__inner">
+    <div class=" text-right hero-text-wrap">
+      {% if section.settings.title != blank %}
+        <h2 class="h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">
+          {{ section.settings.title | escape }}<span class="pinky-text"> {{ section.settings.title2 | escape }}</span>
+          <span class="sub-text h4">{{ section.settings.title3 | escape }}</span>
+        </h2>
+      {% endif %}
+      {% if section.settings.text != blank %}
+        <div class="rte-setting mega-subtitle{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text }}</div>
+      {% endif %}
+      {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="btn " style="margin:20px auto;">
+          {{ section.settings.button_label | escape }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<noscript>
+  <div class="hero hero--{{ section.settings.hero_size }}{% if section.settings.title != blank or section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %}"{% if section.settings.image %} style="background-image: url('{{ section.settings.image | img_url: '2048x' }}'); background-position: center {{ section.settings.alignment }};"{% endif %}></div>
+</noscript>
+
+
+{% schema %}
+  {
+    "name": "Hero (ourwork)", 
+    "class": "index-section--flush",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+
+{
+		"type":"color",
+		"id":"overlay_text_color",
+		"label":"Overlay text color",
+		"default":"#FFFFFF"
+		},
+		{
+		"type":"color",
+		"id":"overlay_transparence",
+		"label":"Overlay Transparent color",
+		"default":"#000000"
+		},
+          {
+            "type": "select",
+            "id": "trancparency_percent",
+            "label": "Transparency percent",
+            "default": "0.3",
+            "options": [
+              {
+                "label": "10%",
+                "value": "0.1"
+              },
+              {
+                "label": "20%",
+                "value": "0.2"
+              },
+              {
+                "label": "30%",
+                "value": "0.3"
+              },
+              {
+                "label": "40%",
+                "value": "0.4"
+              },
+              {
+                "label": "50%",
+                "value": "0.5"
+              },
+              {
+                "label": "60%",
+                "value": "0.6"
+              },
+              {
+                "label": "70%",
+                "value": "0.7"
+              },
+              {
+                "label": "80%",
+                "value": "0.8"
+              },
+              {
+                "label": "90%",
+                "value": "0.9"
+              },
+              {
+                "label": "1000%",
+                "value": "1"
+              }
+            ]
+          },
+
+      {
+        "type": "select",
+        "id": "alignment",
+        "label": "Image alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Our"
+      },
+      {
+        "type": "text",
+        "id": "title2",
+        "label": "pinky Heading",
+        "default": "Work"
+      },
+      {
+        "type": "text",
+        "id": "title3",
+        "label": "proud of text",
+        "default": "proud of our Work"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+      },
+      {
+        "type": "select",
+        "id": "hero_size",
+        "label": "Section height",
+        "default": "medium",
+        "options": [
+          {
+            "label": "Extra Small",
+            "value": "x-small"
+          },
+          {
+            "label": "Small",
+            "value": "small"
+          },
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          },
+          {
+            "label": "Extra Large",
+            "value": "x-large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Text size",
+        "default": "medium",
+        "options": [
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with text (Aboutus)",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

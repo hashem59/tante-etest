@@ -1,0 +1,64 @@
+<style type="text/css">
+  .blog-nav li{ border-right: 1px solid #000; }
+  .blog-nav li:last-child{ border-right: 0px solid #000; }
+
+  @media only screen and (max-width: 749px){
+  .blog-nav li{ border-right: 0px solid #000; }
+  .blog-nav li{ border-bottom: 1px solid #000; }
+
+  }
+
+  .sub-menu .blog-social-nav {
+    margin:0px;
+    padding:25px 0px;
+  }
+
+  .blog-social-nav .password__input-group{ margin-bottom: 0px; padding: 20px 0px; }
+
+  .from-wrapper form{display: inline-block;}
+  .blog-social-nav ul li a svg{    
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+</style>
+
+<div class=" sub-menu" style="    background-color: #e1e1e1;"> 
+<nav class=" page-width" id="AccessibleNav" role="navigation">
+  <div  class="grid  blog-social-nav list--inline " id="SiteNav" style="    display: flex;
+    align-items: center;">
+
+
+    
+      <div class="grid__item medium-up--one-half text-left small--text-center">
+      <ul class="list--inline ">
+        <li>
+        <a href="{{settings.social_facebook_link}}" target="_blank" class="site-nav__link site-nav__link--main">
+          Become part of the community
+          {% include 'icon-facebook' %}
+        </a>
+      </li>
+
+      <li>
+        <a href="{{settings.social_youtube_link}}" target="_blank" class="site-nav__link site-nav__link--main">Watch past events 
+          {% include 'icon-youtube' %}
+         </a>
+      </li>   
+      </ul>
+    </div>
+
+    <div class="grid__item medium-up--one-half text-right small--text-center from-wrapper">
+
+      <br class="medium-up--hide" />
+      
+      <a href="http://facebook.us15.list-manage.com/subscribe?u=2ec812678928546dde45a7098&id=e5850f5528" target="_blank" class="btn" style="width: 100%; max-width:500px; ">
+      Get updated about news in the community
+      </a>
+      </div>
+  
+    
+  
+  </div>
+
+</nav>
+
+</div>

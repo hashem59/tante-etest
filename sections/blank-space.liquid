@@ -1,0 +1,34 @@
+
+
+<style>
+.blank-space-{{section.settings.id}}
+  {
+    height:{{section.settings.height}}px;
+  }
+</style>
+
+
+<div class="blank-space-{{section.settings.id}}">
+</div>
+
+
+{% schema %}
+  {
+    "name": "Blank Space",
+    "settings": [
+		{
+			"type":"text",
+			"id":"height",
+			"label":"space height (in pixels)",
+			"default":"50"
+		}	
+	],
+    "presets": [
+      {
+        "name": "Blank Space",
+        "category": "Advanced layout"
+      }
+    ]
+  }
+{% endschema %}
+

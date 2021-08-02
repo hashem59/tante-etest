@@ -1,0 +1,250 @@
+{%- assign social_icons = false -%}
+
+{% if
+  settings.social_twitter_link != blank
+  or settings.social_facebook_link != blank
+  or settings.social_pinterest_link != blank
+  or settings.social_instagram_link != blank
+  or settings.social_tumblr_link != blank
+  or settings.social_snapchat_link != blank
+  or settings.social_youtube_link != blank
+  or settings.social_vimeo_link != blank
+  or template.name == 'article'
+  or template.name == 'blog'
+%}
+  {%- assign social_icons = true -%}
+{% endif %}
+<div class="svgsympols">
+  <svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="shopify-experts-logo-inverse"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 108"><path fill="#fff" d="M414.71 51.95c0-5.024-3.057-9.73-10.384-9.73-12.702 0-21.687 16.746-21.687 29.566 0 8.524 3.61 16.688 14 16.688 4.28.084 8.5-1.08 12.14-3.35l-1.21-3.147c-3.08 1.936-6.65 2.966-10.28 2.972-4.73 0-8.16-2.52-9.73-7.54-.8-3.66-.93-7.42-.37-11.12 14.53.11 27.51-3.03 27.51-14.35zm-11.12-6.213c4.186 0 6.95 2.227 6.95 6.305v.092c0 8.81-11.12 10.75-22.71 10.66 2.764-9.64 8.902-17.057 15.76-17.057zm47.827-2.597h-4.723l-9.21 11.59c-2.136 2.596-3.15 4.187-5.025 6.858h-.19c-1.02-2.32-1.85-4.64-2.87-7.226l-4.64-11.22h-4.26l9.21 21.77-18.42 22.708h4.73l10.05-12.61c1.73-2.228 3.34-4.548 4.82-6.95h.18c1.11 3.148 1.75 4.915 3.05 7.88l4.73 11.68h4.35l-9.41-22.69 17.61-21.79zm24.19-.92c-5.928 0-11.496 3.8-15.516 9.914h-.18l1.39-8.993h-3.8c-.55 4.08-1.39 9.46-2.51 15.3l-8.85 47.37h3.99l3.53-19.19h.19c2.76 1.39 5.82 2.07 8.9 1.95 14.19 0 24.48-16.87 24.48-31.88-.01-7.32-3.16-14.46-11.6-14.46zm-12.51 42.82c-3.616 0-6.58-.928-8.615-2.51l2.864-15.324c2.512-13.44 10.75-21.502 17.056-21.502 6.58 0 8.624 5.937 8.624 11.22 0 11.437-8.155 28.117-19.928 28.117zm50.148-42.82c-12.702 0-21.687 16.746-21.687 29.566 0 8.524 3.617 16.688 14 16.688 4.286.084 8.504-1.08 12.14-3.35l-1.205-3.147c-3.084 1.935-6.65 2.962-10.29 2.964-4.732 0-8.157-2.51-9.73-7.53-.8-3.64-.928-7.4-.378-11.08 14.553.09 27.53-3.05 27.53-14.37-.006-5-3.062-9.73-10.38-9.73zm6.205 9.914c0 8.81-11.12 10.75-22.708 10.66 2.78-9.64 8.9-17.057 15.758-17.057 4.187 0 6.95 2.227 6.95 6.305v.092zm16.78.746h-.185c.553-3.895.93-6.86 1.206-9.73h-3.61c-.37 3.893-1.02 8.9-2.13 14.552l-5.65 29.943h3.99l4.26-22.608c1.85-9.73 8.38-18.538 14.19-18.538.5-.03.99 0 1.48.09l.84-4.26c-.46 0-1.11-.1-1.67-.1-5.56-.02-10 4.7-12.69 10.64zm26.693 32.07c-2.78 0-3.986-1.575-3.986-4.188.067-2.59.378-5.165.93-7.695l4.89-26.493h10.474l.75-3.433h-10.46l1.95-9.73-4.44 1.76-1.48 7.97h-6.49l-.64 3.44h6.4l-5.02 26.51c-.64 2.67-.98 5.41-1.02 8.16 0 3.71 2.05 7.23 7.33 7.23 1.48 0 2.94-.22 4.36-.64l-.274-3.24c-1.05.3-2.14.43-3.236.37zm29.29-39.213c2.228.053 4.402.69 6.305 1.85L600 44.154c-1.298-1.022-4.262-1.943-7.327-1.943-7.88 0-13.53 5.66-13.53 12.61 0 4.19 2.41 8.16 6.857 11.03 4.187 2.69 6.03 5.38 6.03 9.82 0 5.1-3.987 9.27-9.823 9.27-2.792-.01-5.51-.89-7.787-2.51l-1.574 3.35c1.482 1.21 5.024 2.69 8.993 2.69 7.69 0 14.23-4.91 14.23-13.91 0-4.54-2.6-8.61-6.86-11.49-3.62-2.51-6.03-4.82-6.03-8.99.03-4.53 3.65-8.33 9.03-8.33zM129.2 60.657c-3.2-1.74-4.874-3.214-4.874-5.232 0-2.57 2.294-4.187 5.86-4.187 2.73.057 5.42.646 7.922 1.733l2.964-9.01s-2.705-2.11-10.642-2.11c-11.06 0-18.723 6.33-18.723 15.24 0 5.03 3.575 8.9 8.373 11.66 3.852 2.2 5.233 3.76 5.233 6.06s-1.926 4.31-5.51 4.31c-3.618-.15-7.16-1.09-10.374-2.75l-3.13 9s4.65 3.127 12.48 3.127c11.38 0 19.55-5.6 19.55-15.69-.06-5.42-4.19-9.27-9.14-12.116zm45.365-18.907c-5.602 0-10.006 2.664-13.397 6.7l-.184-.092 4.865-25.42h-12.7l-12.3 64.7h12.67l4.18-22.123c1.67-8.373 5.96-13.49 10-13.49 2.84 0 3.94 1.927 3.94 4.682 0 1.88-.19 3.757-.55 5.602l-4.78 25.32H179l4.957-26.16c.55-2.73.858-5.49.922-8.27.03-7.16-3.74-11.47-10.32-11.47zm38.985 0c-15.238 0-25.328 13.767-25.328 29.098 0 9.822 6.054 17.71 17.44 17.71 14.964 0 25.054-13.398 25.054-29.098-.01-9.085-5.326-17.71-17.165-17.71zm-6.246 37.078c-4.312 0-6.146-3.667-6.146-8.256 0-7.25 3.76-19.09 10.642-19.09 4.496 0 5.962 3.85 5.962 7.62.01 7.794-3.75 19.726-10.458 19.726zm55.808-37.078c-8.55 0-13.397 7.537-13.397 7.537h-.184l.74-6.79h-11.23c-.52 4.613-1.53 11.554-2.51 16.78l-8.81 46.345h12.67l3.48-18.722h.28s2.61 1.674 7.44 1.674c14.88 0 24.61-15.24 24.61-30.654-.04-8.55-3.8-16.17-13.07-16.17zm-12.116 37.262c-1.915.035-3.78-.615-5.258-1.834l2.11-11.84c1.465-7.896 5.602-13.12 10.006-13.12 3.852 0 5.024 3.574 5.024 6.974.05 8.164-4.815 19.82-11.882 19.82zm43.23-55.432c-3.99-.013-7.237 3.21-7.25 7.2v.144c0 3.76 2.386 6.33 5.962 6.33h.184c3.946.16 7.274-2.91 7.432-6.858.006-.162.008-.324.003-.486.176-3.32-2.373-6.154-5.694-6.33-.212-.01-.424-.01-.636 0zm-17.71 64.065h12.66l8.634-44.88h-12.76m44.972-.1h-8.817l.46-2.11c.738-4.313 3.308-8.173 7.537-8.173 1.37.004 2.732.222 4.036.645l2.512-9.914s-2.244-1.122-6.925-1.122c-4.5-.13-8.896 1.36-12.392 4.19-4.312 3.67-6.33 9-7.343 14.32l-.368 2.11h-5.86L301 52.21h5.86l-6.698 35.427h12.67l6.698-35.427h8.717l1.772-9.546zm18.998 30.93h-.183c-.243-3.51-3.123-30.84-3.123-30.84H332.41l7.61 41.196c.2.72.1 1.48-.276 2.11-1.65 3.06-4.01 5.67-6.883 7.62-2.19 1.54-4.61 2.74-7.15 3.58l3.48 10.74c4.64-1.23 8.9-3.59 12.4-6.88 5.79-5.42 11.1-13.76 16.61-25.12l15.52-33.24h-13.26s-7.88 19.96-11.43 30.84z"></path><path fill="#95bf46" d="M80.274 21.555c-.076-.456-.452-.8-.913-.837l-8.37-.628-6.19-6.138c-.61-.61-1.8-.427-2.27-.293l-3.11.96C57.56 9.27 54.28 4.35 48.54 4.35l-.51.05c-1.68-2.17-3.68-3.115-5.43-3.115-13.44 0-19.86 16.805-21.88 25.346l-9.428 2.89c-2.913.92-3.005 1.01-3.35 3.75C7.63 35.39 0 94.36 0 94.36l59.45 11.136 32.22-6.967S80.35 22.08 80.274 21.55zm-24.14-5.912L51.11 17.2v-1.09c.058-2.754-.347-5.5-1.197-8.12 2.964.377 4.915 3.76 6.22 7.653zm-9.914-6.99c1.01 2.91 1.473 5.98 1.365 9.06v.585l-10.4 3.207c2.002-7.72 5.753-11.447 9.035-12.853zm-3.994-3.786c.618.016 1.217.22 1.717.586-4.312 2.026-8.926 7.134-10.885 17.333l-8.214 2.512c2.302-7.754 7.72-20.43 17.382-20.43z"></path><path fill="#5f8e3e" d="M79.36 20.71l-8.372-.63-6.188-6.128c-.232-.215-.524-.352-.837-.394l-4.496 91.938L91.67 98.53 80.29 21.563c-.07-.468-.456-.824-.93-.854z"></path><path fill="#fff" d="M48.506 38.51l-3.97 11.816c-2.413-1.182-5.057-1.816-7.744-1.86-6.255 0-6.565 3.928-6.565 4.916 0 5.392 14.067 7.46 14.067 20.096 0 9.947-6.305 16.345-14.812 16.345-10.207 0-15.423-6.347-15.423-6.347l2.73-9.026s5.36 4.605 9.88 4.605c2.2.106 4.07-1.593 4.18-3.797v-.23c0-7.043-11.54-7.353-11.54-18.916 0-9.738 6.98-19.158 21.09-19.158 5.41 0 8.09 1.557 8.09 1.557z"></path></svg>
+  </symbol>
+  <symbol id="klavio-logo-inverse">
+
+  </symbol>
+</svg>
+</div>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="page-width">
+    <div class="grid grid--no-gutters">
+
+
+      <div class="grid__item medium-up--three-fifths text-left {% if section.settings.footer_newsletter_enable and section.settings.footer_linklist_two != blank %} medium-up--one-quarter{% elsif section.settings.footer_linklist_two == blank and section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} {% endif %}">
+        {% if linklists[section.settings.footer_linklist].links.size > 0 %}
+          <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
+            {% for link in linklists[section.settings.footer_linklist].links %}
+              <li class="site-footer__linklist-item">
+                <a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      <div class="grid__item medium-up--two-fifths footer-logos">
+        <div class="grid grid--no-gutters footer-logos-wrap">
+          <div class="grid__item medium-up--one-half icon-wrap">
+            <!--<svg class="svg_icon" aria-labelledby="icon-shopify-experts-logo-inverse-2-title"><title id="icon-shopify-experts-logo-inverse-2-title">Home</title> <use xlink:href="#shopify-experts-logo-inverse"></use> </svg>-->
+            <a href="https://www.shopify.com/?ref=bertbaum-internet" class="logo-bar__link">
+              <svg class="svg_icon" aria-labelledby="icon-shopify-experts-logo-inverse-2-title"><title id="icon-shopify-experts-logo-inverse-2-title">Home</title> <use xlink:href="#shopify-experts-logo-inverse"></use> </svg>
+            </a>
+          </div>
+          <div class="grid__item medium-up--one-half icon-wrap">
+            <a href="https://www.klaviyo.com/partner/signup?utm_source=0010V00002CC4Hw&amp;utm_medium=partner" class="logo-bar__link">
+            <img src="{{ 'Klaviyo-Partner.png' | asset_url }}" alt="" class="logo-bar__image">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="grid__item {% if section.settings.footer_newsletter_enable and section.settings.footer_linklist != blank %} medium-up--one-quarter{% elsif section.settings.footer_linklist == blank and section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} text-center{% endif %}">
+        {% if linklists[section.settings.footer_linklist_two].links.size > 0 %}
+          <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
+            {% for link in linklists[section.settings.footer_linklist_two].links %}
+              <li class="site-footer__linklist-item">
+                <a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      {% if section.settings.footer_newsletter_enable %}
+        <div class="grid__item medium-up--one-half">
+          <div class="site-footer__newsletter">
+            {% form 'customer' %}
+              {{ form.errors | default_errors }}
+              {% if form.posted_successfully? %}
+                <p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
+              {% else %}
+                <label for="Email" class="h4">{{ 'general.newsletter_form.newsletter_email' | t }}</label>
+                <div class="input-group">
+                  <input type="hidden" name="contact[tags]" value="newsletter">
+                  <input type="email"
+                    name="contact[email]"
+                    id="Email"
+                    class="input-group__field newsletter__input"
+                    value="{% if customer %}{{ customer.email }}{% endif %}"
+                    placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                    autocorrect="off"
+                    autocapitalize="off">
+                  <span class="input-group__btn">
+                    <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
+                      <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+                    </button>
+                  </span>
+                </div>
+              {% endif %}
+            {% endform %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="grid grid--no-gutters">
+      {% comment %}
+      {% if social_icons %}
+        <div class="grid__item{% if section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} text-center{% endif %}">
+          <ul class="list--inline site-footer__social-icons social-icons">
+            {% if settings.social_facebook_link != blank %}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_facebook_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}">
+                  {% include 'icon-facebook' %}
+                  <span class="icon__fallback-text">Facebook</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if settings.social_twitter_link != blank %}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_twitter_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Twitter' }}">
+                  {% include 'icon-twitter' %}
+                  <span class="icon__fallback-text">Twitter</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if settings.social_pinterest_link != blank %}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_pinterest_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}">
+                  {% include 'icon-pinterest' %}
+                  <span class="icon__fallback-text">Pinterest</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if settings.social_instagram_link != blank %}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_instagram_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Instagram' }}">
+                  {% include 'icon-instagram' %}
+                  <span class="icon__fallback-text">Instagram</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if settings.social_tumblr_link != blank %}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_tumblr_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Tumblr' }}">
+                  {% include 'icon-tumblr' %}
+                  <span class="icon__fallback-text">Tumblr</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if settings.social_snapchat_link != blank %}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_snapchat_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Snapchat' }}">
+                  {% include 'icon-snapchat' %}
+                  <span class="icon__fallback-text">Snapchat</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if settings.social_youtube_link != blank %}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_youtube_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'YouTube' }}">
+                  {% include 'icon-youtube' %}
+                  <span class="icon__fallback-text">YouTube</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if settings.social_vimeo_link != blank %}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_vimeo_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Vimeo' }}">
+                  {% include 'icon-vimeo' %}
+                  <span class="icon__fallback-text">Vimeo</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if template.name == 'blog' or template.name == 'article' %}
+              <li>
+                <a class="social-icons__link" href="{{ shop.url }}{{ blog.url }}.atom">
+                  {% include 'icon-rss' %}
+                  <span class="icon__fallback-text">RSS</span>
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+      {% endif %}
+      {% endcomment %}
+      <div class="grid__item{% if section.settings.footer_newsletter_enable and social_icons == true %} medium-up--one-half{% else %} text-center{% endif %}">
+        <div class="site-footer__copyright{% if social_icons and section.settings.footer_newsletter_enable != blank %} site-footer__copyright--right medium-up--text-right{% elsif social_icons == false and section.settings.footer_newsletter_enable %} medium-up--text-left{% endif %}">
+          {% unless social_icons and section.settings.footer_newsletter_enable and section.settings.show_payment_icons %}
+            <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}</small>
+            <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
+          {% endunless %}
+          {% if section.settings.show_payment_icons %}
+            <div class="site-footer__payment-icons{% unless social_icons or section.settings.footer_newsletter_enable == blank %} site-footer__payment-icons--right{% endunless %}">
+              {% unless shop.enabled_payment_types == empty %}
+                {%- assign payment_icons_available = 'amazon_payments,american_express,apple_pay,bitcoin,cirrus,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,jcb,klarna,litecoin,maestro,master,paypal,stripe,shopify_pay,visa' | split: ',' -%}
+                <ul class="payment-icons list--inline">
+                  {% for type in shop.enabled_payment_types %}
+                    {% if payment_icons_available contains type %}
+                      <li class="payment-icon">
+                        {%- assign icon_name = type | prepend: 'icon-' -%}
+                        {% include icon_name %}
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endunless %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% if social_icons and section.settings.footer_newsletter_enable and section.settings.show_payment_icons %}
+      <div class="site-footer__copyright--bottom">
+        <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}</small>
+        <small class="site-footer__copyright-content">{{ powered_by_link }}</small>
+      </div>
+    {% endif %}
+  </div>
+</footer>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "footer_linklist",
+        "label": "Primary menu",
+        "default": "footer",
+        "info": "This menu won't show dropdown items"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_linklist_two",
+        "label": "Additional menu",
+        "default": "main-menu",
+        "info": "This menu won't show dropdown items"
+      },
+      {
+        "type": "checkbox",
+        "id": "footer_newsletter_enable",
+        "label": "Show newsletter signup",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_payment_icons",
+        "label": "Show payment icons",
+        "default": false
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,103 @@
+
+	<div class="shop-setup-projects projects-container" id="online-marketing-projects">
+		{% for block in section.blocks %}
+		{% case block.type %}
+			{% when 'project_item' %}
+				{% assign item_width = block.settings.preview_width %}
+
+
+				<div class="{{item_width}} tile-item">
+					<figure class="project-figure">
+						<a href="{{block.settings.project_page}}" class="project-link">
+							<picture>
+								<source srcset="{{ block.settings.preview_image_mob | img_url:  '500x500' }}" media="(max-width: 1023px)">
+								<source srcset="{{ block.settings.preview_image | img_url: '1200x1200'}}">
+								<img src="{{ block.settings.preview_image | img_url: '500x500' }}" alt="project-preview" class="preview-img">
+							</picture>
+							<figcaption class="c_overlay">
+								<div class="c-panel" style="background-color:{{block.settings.color}}">
+									<div class="c-panel-header h2">
+											{{block.settings.item_head}}
+									</div>
+									<div class="c-panel-eontent h4">
+											{{block.settings.item_content}}
+									</div>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+		{% endcase %}
+		{% endfor %}
+	</div>
+
+
+{% schema %}
+{
+  "name": "(marketing-projects)",
+  "class": "project-preview",
+  "settings": [],
+  "blocks": [
+	    {
+	      "type": "project_item",
+	      "name": "Project Preiview",
+	      "settings":[
+				{
+				   "type":      "select",
+				   "id":        "preview_width",
+				   "label":     "Select preview width",
+				   "options": [
+				     {
+				       "group": "value",
+				       "value": "one_third",
+				       "label": "one third"
+				     },
+				     {
+				       "group": "value",
+				       "value": "two_thirds_right",
+				       "label": "two thirds right"
+				     },
+						 {
+				       "group": "value",
+				       "value": "two_thirds_left",
+				       "label": "two thirds left"
+				     }
+				   ],
+				   "default":   "one_third",
+				   "info":      "Text"
+				},
+				{
+	        "type": "image_picker",
+	        "id": "preview_image",
+	        "label": "Image"
+	      },
+				{
+	        "type": "image_picker",
+	        "id": "preview_image_mob",
+	        "label": "Image for Mobile"
+	      },
+        {
+					"type":"text",
+					"id":"item_head",
+					"label":"Project Head"
+        },
+				{
+					"type":"richtext",
+					"id":"item_content",
+					"label":"Project Description"
+        },
+				{
+					"type":"text",
+					"id":"color",
+					"label":"caption background (RGB) color"
+        },
+				{
+					"type":"url",
+					"id":"project_page",
+					"label":"Project link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

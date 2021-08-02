@@ -1,0 +1,631 @@
+{{ 'draw-border.scss.css' | asset_url | stylesheet_tag }}
+{{ 'subWidget-styles.css' | asset_url | stylesheet_tag }}
+
+
+<div class="page-width " style="padding-top:50px;">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+        
+        <p style="color: #6c7b93;">
+	        Schreib uns eine Nachricht mit dem gewünschten Paket / Thema bei dem wir Dir helfen können. Wir melden uns bei Dir und machen ein Telefonat aus, in dem wir uns austauschen ob und wie wir zusammenarbeiten können.
+        </p>
+        
+      </div>
+
+      {% if page.content.size > 0 %}
+        <div class="rte">
+          {{ page.content }}
+        </div>
+      {% endif %}
+      
+      
+      </div>
+    </div>
+</div>
+
+  
+  
+<div class="contact-form form-vertical">
+
+  <div class="page-width subWidget">
+  {% form 'contact' %}
+
+    
+    
+          {% if form.posted_successfully? %}
+            <p class="note form-success">
+              {{ 'contact.form.post_success' | t }}
+            </p>
+          {% endif %}
+
+          {{ form.errors | default_errors }}
+    
+    
+    	<div class="question active">
+			<h1 class="h1 mega-title  text-center question-title small--hide">
+				 IN WELCHEM BEREICH SUCHST DU UNTERSTÜTZUNG?
+      </h1>
+      <h1 class="h2 mega-title  text-center question-title medium-up--hide">
+         IN WELCHEM BEREICH SUCHST DU UNTERSTÜTZUNG?
+      </h1>
+        <div class="options grid">
+          {% assign small_item_width = 'small--one-half' %}
+        	<div class="option grid__item medium-up--one-fifth {{small_item_width}} text-center draw-border">
+        		<label>
+          			<img src="{{'1-01.png' | asset_img_url:'medium' }}">          
+        			<h2 class="h2">SHOP ANPASSUNG</h2>
+        		
+	        		<div class="box-wrapper"> 
+                      <input type="checkbox" name="contact[ContactFormInterest][1]" value="SHOP ANPASSUNG">
+	    			    <span class="rounded-checkbox"></span>
+	    			</div>
+    			</label>
+           	</div>
+
+
+        	<div class="option grid__item medium-up--one-fifth {{small_item_width}} text-center draw-border">
+        		<label>
+                <img src="{{'2-01.png' | asset_img_url:'medium' }}">          
+        			<h2 class="h2">SHOP AUFSETZEN</h2>
+        		
+	        		<div class="box-wrapper"> 
+                      <input type="checkbox" name="contact[ContactFormInterest][2]" value="SHOP AUFSETZEN ">
+	    			    <span class="rounded-checkbox"></span>
+	    			</div>
+    			</label>
+           	</div>
+
+
+        	<div class="option grid__item medium-up--one-fifth {{small_item_width}} text-center draw-border">
+        		<label>
+                <img src="{{'3-01.png' | asset_img_url:'medium' }}">          
+        			<h2 class="h2">SHOP ANALYSE</h2>
+        		
+	        		<div class="box-wrapper"> 
+                      <input type="checkbox" name="contact[ContactFormInterest][3]" value="SHOP ANALYSE">
+	    			    <span class="rounded-checkbox"></span>
+	    			</div>
+    			</label>
+           	</div>
+
+          
+
+
+        	<div class="option grid__item medium-up--one-fifth {{small_item_width}} text-center draw-border">
+        		<label>
+                <img src="{{'4-01.png' | asset_img_url:'medium' }}">          
+        			<h2 class="h2">MARKETING </h2>
+        		
+	        		<div class="box-wrapper"> 
+                      <input type="checkbox" name="contact[ContactFormInterest][4]" value="MARKETING">
+	    			    <span class="rounded-checkbox"></span>
+	    			</div>
+    			</label>
+           	</div>
+          
+
+
+        	<div class="option grid__item medium-up--one-fifth {{small_item_width}} text-center draw-border">
+        		<label>
+                <img src="{{'5-01.png' | asset_img_url:'medium' }}">          
+        			<h2 class="h2">SONSTIGES </h2>
+        		
+	        		<div class="box-wrapper"> 
+                      <input type="checkbox" name="contact[ContactFormInterest][5]" value="SONSTIGES ">
+	    			    <span class="rounded-checkbox"></span>
+	    			</div>
+    			</label>
+           	</div>          
+          
+        </div>
+	</div>
+        
+    	<div class="question  ">
+  		<h1 class="h1 mega-title  text-center question-title small--hide">
+  			WIE IST DEINE ZEITPLANUNG?
+      </h1>
+      <h1 class="h2 mega-title  text-center question-title medium-up--hide">
+        WIE IST DEINE ZEITPLANUNG?
+      </h1>
+
+        <div class="options grid">
+
+        	<div class="option grid__item medium-up--one-quarter {{small_item_width}} text-center draw-border">
+        		<label>
+                <img src="{{'6-01.png' | asset_img_url:'medium' }}">          
+        			<h2 class="h2"> SO SCHNELL WIE MÖGLICH </h2>
+        		
+	        		<div class="box-wrapper"> 
+                      <input type="radio" name="contact[Timeline]" value=" SO SCHNELL WIE MÖGLICH">
+	    			    <span class="rounded-checkbox"></span>
+	    			</div>
+    			</label>
+           	</div>
+          
+        	<div class="option grid__item medium-up--one-quarter {{small_item_width}} text-center draw-border">
+        		<label>
+                <img src="{{'7-01.png' | asset_img_url:'medium' }}">          
+        			<h2 class="h2"> DIESEN MONAT</h2>
+        		
+	        		<div class="box-wrapper"> 
+                      <input type="radio" name="contact[Timeline]" value=" DIESEN MONAT ">
+	    			    <span class="rounded-checkbox"></span>
+	    			</div>
+    			</label>
+           	</div>          
+          
+        	<div class="option grid__item medium-up--one-quarter {{small_item_width}} text-center draw-border">
+        		<label>
+                <img src="{{'8-01.png' | asset_img_url:'medium' }}">          
+        			<h2 class="h2">INNERHALB DER NÄCHSTEN 3 MONATE</h2>
+        		
+	        		<div class="box-wrapper"> 
+                      <input type="radio" name="contact[Timeline]" value="INNERHALB DER NÄCHSTEN 3 MONATE">
+	    			    <span class="rounded-checkbox"></span>
+	    			</div>
+    			</label>
+           	</div>
+          
+        	<div class="option grid__item medium-up--one-quarter {{small_item_width}} text-center draw-border">
+        		<label>
+                <img src="{{'9-01.png' | asset_img_url:'medium' }}">          
+        			<h2 class="h2">IN 3 MONATEN ODER SPÄTER</h2>
+        		
+	        		<div class="box-wrapper"> 
+                      <input type="radio" name="contact[Timeline]" value="IN 3 MONATEN ODER SPÄTER">
+	    			    <span class="rounded-checkbox"></span>
+	    			</div>
+    			</label>
+           	</div>
+          
+         </div>
+          
+          
+    	</div>
+
+    
+    <div class="question   small-height">
+  		<h1 class="h1 mega-title  text-center question-title small--hide">
+  			WIE KÖNNEN WIR DIR HELFEN?         
+      </h1>
+           
+      <h1 class="h2 mega-title  text-center question-title medium-up--hide">
+			WIE KÖNNEN WIR DIR HELFEN?        
+      </h1>
+      
+      <div class="options grid centered" >
+          
+          
+          
+         <div class="option nohover text-center " style="max-width: 100%;">
+              <label>
+                <img src="{{'10-01.png' | asset_img_url:'medium' }}">          
+              	<h2 class="h2" style="margin: 2px auto;">BESCHREIB UNS BITTE KURZ WIE WIR DIR HELFEN KÖNNEN</h2>
+              	<textarea  id="ContactFormLookingfor" name="contact[lookingfor]" rows="6" style="width:96%; margin:0 2%;" >{% if form.lookingfor %}{{ form.lookingfor }}{% endif %}</textarea>
+              </label>
+          </div>
+          
+          <div class="medium-up--hide text-center">
+            <span class="next" style="cursor:pointer; background: #f13b62; padding: 5px 10px; color: #FFF; display: inline-block; ">
+              NEXT
+            </span>
+          </div>
+      </div>
+      
+      </div>
+    
+    
+    
+    
+    
+      <div class="question   small-height">
+		    <h1 class="h1 mega-title  text-center question-title small--hide">
+			     BUDGET       
+        </h1>
+	     <h1 class="h2 mega-title  text-center question-title medium-up--hide">
+			   BUDGET       
+        </h1>
+        
+        <div class="options grid centered" >
+          
+            <div class="option nohover text-center" style="max-width: 100%;">
+              <label>
+                <img src="{{'11-01.png' | asset_img_url:'medium' }}">          
+              <h2 class="h2">WAS IST DEIN GEPLANTES BUDGET?</h2>
+              <input  type="text" id="ContactFormBudget" name="contact[budget]" />
+              </label>
+            </div>
+
+
+          <div class="medium-up--hide text-center">
+            <span class="next" style="cursor:pointer; background: #f13b62; padding: 5px 10px; color: #FFF; display: inline-block; ">
+              NEXT
+            </span>
+          </div>
+          
+             
+      	</div>
+
+
+
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <div class="question ">
+    		<h1 class="h1 mega-title  text-center question-title small--hide">
+    			 BITTE HINTERLASSE UNS DEINE KONTAKTDATEN      
+        </h1>
+             
+  		  <h1 class="h2 mega-title  text-center question-title medium-up--hide">
+  			 BITTE HINTERLASSE UNS DEINE KONTAKTDATEN    
+        </h1>
+      
+      <div class="last-box">
+        <div class="options centered grid" >
+                      
+          <div class="grid__item medium-up--one-half">
+            <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
+            <input type="text" id="ContactFormName" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+          </div>
+          
+                      
+          <div class="grid__item medium-up--one-half">
+            <label for="ContactFormDomain">Myshopify Shop Domain </label>
+            <input type="text" id="ContactFormDomain" name="contact[domain]" value="{% if form[domain] %}{{ form[domain] }}{% endif %}">
+          </div>
+
+        </div>
+        
+        
+        
+        <div class="options centered grid" >
+          
+            <div class="grid__item medium-up--one-half">
+              <label for="ContactFormEmail" class="{% if form.errors contains 'email' %}label--error{% endif %}">{{ 'contact.form.email' | t }}</label>
+              <input type="email" id="ContactFormEmail" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" class="{% if form.errors contains 'email' %}input--error{% endif %}">
+            </div>
+         
+
+           <div class="grid__item medium-up--one-half">
+          	<label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
+          	<input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+			     </div>
+          
+        </div>
+        
+        
+        <div class="options  grid centered">
+
+          <div class="grid__item medium-up--one-half medium-up--push-one-quarter">
+              <label for="shopifyPlan">Derzeitiges Shopify Paket</label>
+              <select class="basic-multiple" id="shopifyPlan" name="contact[shopifyPlan][]" >
+                  <option value="Basic Shopify (29 USD / month)">Basic Shopify (29 USD / month)</option>
+                  <option value="Shopify (79 USD / month)">Shopify (79 USD / month)</option>
+                  <option value="Advanced Shopify (299 USD / month)">Advanced Shopify (299 USD / month)</option>
+                  <option value="Shopify Plus">Shopify Plus</option>
+                  <option value="Not sure">Not sure</option>
+              </select>
+            </div>
+          
+        
+        </div>
+      </div>
+    </div>
+   
+    
+    {% comment %}
+    
+
+
+          <div class="grid grid--half-gutters">
+            
+            
+            
+            <div class="grid__item">
+            <label>What area are you interested in?</label><br>
+				
+              <input type="radio" id="ContactFormInterest" name="contact[Timeline]" value="Setup / Customization" />
+              	as soon as possible
+              	<br>
+              
+              <input type="radio" id="contactFormCoffee" name="contact[ContactFormInterest]" value="Marketing" />
+              	this month
+              	<br>
+              
+              <input type="radio" id="contactFormCoffee" name="contact[ContactFormInterest]" value="Performance Optimization" />
+              	Performance Optimization
+              	<br>
+              
+              <input type="radio" id="contactFormCoffee" name="contact[ContactFormInterest]" value="Email / Messenger Automation" />
+              	Email / Messenger Automation
+              	<br>
+              
+              <input type="radio" id="contactFormCoffee" name="contact[Other]" value="Other" />
+              	other
+              	<br>
+              	              	              	
+              	
+              
+            </div>
+            
+<!--             <div class="grid__item">
+              <label for="ContactFormInterest">What area are you interested in?</label>
+              <select class="basic-multiple" id="ContactFormInterest" name="contact[Interest][]" multiple="multiple">
+                  <option value="Setup / Customization">Setup / Customization</option>
+                  <option value="Marketing">Marketing</option>
+                  <option value="Performance Optimization">Performance Optimization</option>
+                  <option value="Email / Messenger Automation">Email / Messenger Automation</option>
+                  <option value="Other">Other</option>
+              </select>
+            </div>
+             -->
+            
+            <div class="grid__item">
+              <label for="ContactFormTimeline">What is your timeline?</label>
+              <select class="basic-select" id="ContactFormTimeline" name="contact[Timeline]" >
+                  <option value="as soon as possible">as soon as possible</option>
+                  <option value="this month">this month</option>
+                  <option value="within next three months">within next three months</option>
+                  <option value="in three months or after">in three months or after</option>
+              </select>
+            </div>
+            
+            
+                        
+            
+            <div class="grid__item">
+              <label for="ContactFormLookingfor">Please briefly describe what you are looking for</label>
+              <input type="text" id="ContactFormLookingfor" name="contact[lookingfor]" value="">
+            </div>
+            
+      </div>
+   
+                                    
+            
+            <div class="grid__item">
+              <label for="ContactFormBudget">What is your budget?</label>
+              <input type="text" id="ContactFormBudget" name="contact[Budget]" value="">
+            </div>
+            
+            <div class="grid__item medium-up--one-half">
+              <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
+              <input type="text" id="ContactFormName" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+            </div>
+            <div class="grid__item medium-up--one-half">
+              <label for="ContactFormEmail" class="{% if form.errors contains 'email' %}label--error{% endif %}">{{ 'contact.form.email' | t }}</label>
+              <input type="email" id="ContactFormEmail" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" class="{% if form.errors contains 'email' %}input--error{% endif %}">
+            </div>
+          </div>
+
+          <label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
+          <input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+
+          <label for="ContactFormMessage">{{ 'contact.form.message' | t }}</label>
+          <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+    
+        {% endcomment %}
+
+  			
+    
+          <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}" style="width: 90%; margin: 20px auto; display: block;">
+
+        {% endform %}
+      </div>
+    </div>
+ 
+
+
+
+
+
+
+<script>
+
+  
+  window.onload= function(){
+    
+    $(document).ready( function(){
+    	
+      $('.basic-multiple').select2();
+      // $('.basic-select').select2();
+      
+      $('input[type=checkbox], input[type=radio]').each(function(){
+
+        $(this).change( function(){
+          console.log('changed');
+          if( $(this)[0].type == 'radio' )
+            {
+              console.log($(this).parents('.options'))
+              $(this).parents('.options').find('.option').each(function(){
+                $(this).removeClass('option-selected');
+              })
+            }
+
+          if( this.checked )
+          {
+            console.log('checked');
+            $(this).parents('.option').addClass('option-selected');
+          }else{
+            $(this).parents('.option').removeClass('option-selected');            
+          }
+        });
+
+      });
+
+      $('[class=option]').each(function(){
+        $(this).addClass('draw-border')
+      });
+
+
+
+
+
+    });
+  }
+
+  // window.onresize=function(){
+  //   if( window.innerWidth < 750 ){
+  //     $('.basic-multiple').select2();
+  //     $('.basic-select').select2();
+  //   }
+  // }
+
+</script>
+
+<script type="text/javascript">
+  
+window.onload= function(){
+
+$(document).ready( function(){
+
+
+  //Forward Events handler
+  $('.subWidget .question').each( function(){
+
+    var currentQuestion = $(this);
+
+    $(this).find('.option').each( function(){
+  
+      var currentOption = $(this);
+
+      $(this).find('label').on('click', function(){
+
+        if( window.innerWidth >= 750 )
+          return;
+
+        var questionType = $(this).find('input').attr('name');
+        console.log( 'the questionType is ', questionType,currentQuestion );
+
+        // currentQuestion.addClass('answered');
+
+        if( questionType !== undefined ){
+          if( questionType.indexOf('ContactFormInterest') > 0 || questionType == "contact[Timeline]"  )
+          {
+            currentQuestion.removeClass('active');
+            currentQuestion.next('.question').first().addClass('active') 
+            // currentQuestion.next('.question').first().addClass('active')
+          }
+
+        }else{
+          
+          // var questionType = $(this).find('textarea').attr('name');
+
+          // if( questionType !== undefined ){
+
+          // }
+
+        }
+
+        // if( currentQuestion.next('.question').first().toggleClass('active') )
+        // {
+        //   currentQuestion.next('.question').next('.question').first().addClass('active');
+        //   currentQuestion.next('.question').next('.question').first().find('input').attr("checked", false);
+        //   var elem = currentQuestion.next('.question').next('.question').first();
+        // }
+        // else{
+        //   currentQuestion.next('.question').first().addClass('active');
+        //   currentQuestion.next('.question').first().find('input').attr("checked", false);
+        //   var elem = currentQuestion.next('.question').first();
+
+        // }
+
+
+
+        // currentQuestion.find('.answer-title').text( currentOption.find('h2').text() );
+ 
+        // if( questionType == 'type'){
+        //   if( answer == 'gift'){
+        //     $('#periodQuestion').removeClass('hide');
+        //   }else{
+        //     $('#periodQuestion').addClass('hide');
+        //   }
+        // }
+
+        // if( questionType =='style'){
+        //   var type = $("input[name='type']:checked").val();
+        //   var weight = $("input[name='weight']:checked").val();
+        //   var style = $("input[name='style']:checked").val();
+        //   var destination = $("input[name='destination']:checked").val();
+        //   var period = $("input[name='period']:checked").val();
+          
+
+        //   if(type =='ongoing')
+        //   {
+        //     var summaryMsg ="You receive "+weight+"g of "+style+" roasted beans once a month shipped to "+destination;
+        //     var code = type+"_"+destination+"_"+weight+"_"+style;
+        //   }
+        //   else
+        //   {
+        //     var summaryMsg ="You receive "+weight+"g of "+style+" roasted beans once a month shipped to "+destination+" for "+period+" months";
+        //     var code = type+"_"+destination+"_"+weight+"_"+period +"_"+ style;
+        //   }
+          
+        //   $('.summary__metatext b').text(summaryMsg);
+        //   Shopify.money_format="€{{amount}}";
+        //   var amount = eval(code);
+
+        //   var link_code = code+"_link";
+        //   var link = eval(link_code);
+          
+        //   // Extract amount from URL
+        //   // var amount = link.match(/&dp=€([^&]+)/)[1];
+
+        //   if(type =='gift')
+        //   {
+        //      amount = amount * period * 100;
+        //   }
+
+        //   $('.summary-checkout').attr('data-link', link);
+
+        //   $('.summary-price').text ( Shopify.formatMoney(amount) );
+        //   $('.summary').removeClass('hide');
+        //   var elem = $('.summary')
+
+        //   console.log("price code", code);
+        // }
+
+        // //scroll to next (elem)
+        //  var topOffset=     $(window).scrollTop() + $(window).height() - elem.height() ;
+        //  $('.section.product--detail').animate({
+        //   scrollTop: ( elem.offset().top - $('header').height() )
+        //  });
+
+      })
+    });
+  });
+
+
+        //handle open/close questions on mobile 
+      $('.h2.mega-title').on('click', function(){
+        $(this).parents('.question').toggleClass('active')
+      });
+
+      //handle next button 
+      $(".next").on('click', function(){
+        console.log("next clicked ")
+        $(this).parents('.question').removeClass("active");
+        $(this).parents('.question').next('.question').first().addClass('active');
+        return;
+      })
+
+});
+}
+</script>
+<style type="text/css">
+  
+  .basic-multiple-wrapper .select2-selection__rendered {
+    background: url({{'arrow-down.png' | asset_img_url :'icon' }}) no-repeat right center;
+    background-size: 13px;
+  }
+</style>
+

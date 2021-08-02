@@ -1,0 +1,120 @@
+<style>
+  .feature-row__image-wrapper .feature-row__image{
+/*  	 max-width: 300px !important;
+    max-height: unset !important; */
+}
+  .custom-head-color {color: #F13B62;}
+</style>
+{% include 'feature-columns-custom2' %}
+<style>
+@media only screen and (max-width: 749px) {
+  .text-columns .grid {margin-left: 0;}
+}
+
+.grid__item.medium-up--one-third.text-center {
+    padding: 0 15px !important;
+}
+
+@media only screen and (min-width: 750px) {
+  .bordered-block {border-left: 1px solid #424A60;border-right: 1px solid #424A60; }
+}
+.text_culomns_section {background: #E7ECED; padding-top: 55px;padding-bottom: 55px;}
+.site-footer {margin: 0 !important;}
+#shopify-section-1525026272831,#shopify-section-1520180725483,#shopify-section-1520355336060 {padding-bottom: 55px !important;padding-top: 55px !important; background: #E7ECED;}
+</style>
+{% schema %}
+  {
+    "name": "Text columns",
+    "class": "text_culomns_section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Text columns with images"
+      },
+      {
+        "type": "select",
+        "id": "align_text",
+        "label": "Text alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Centered"
+          }
+        ]
+      },
+
+	{
+		"type":"text",
+		"id":"img_max_height",
+		"label":"Image max height",
+		"default":"530"
+	}
+
+    ],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "enable_image",
+            "label": "Show image",
+            "default": true
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Add a title or tagline"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Text columns",
+        "category": "Text",
+        "blocks": [
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

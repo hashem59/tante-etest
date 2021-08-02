@@ -1,0 +1,51 @@
+
+{% unless section.settings.heading == blank %}
+<div class="section-header text-{{section.settings.layout}}">
+      <h2> {{section.settings.heading}}</h2>
+</div>
+{% endunless %}
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Headline",
+    "settings": [
+		{
+			"type":"text",
+			"id":"heading",
+			"label":"Heading text"
+		}	,
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      }
+
+		
+	],
+    "presets": [
+      {
+        "name": "Headline",
+        "category": "Advanced layout"
+      }
+    ]
+  }
+{% endschema %}

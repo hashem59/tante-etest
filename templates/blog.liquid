@@ -1,0 +1,27 @@
+{% comment %}
+  The contents of the blog.liquid template can be found in /sections/blog-template.liquid
+{% endcomment %}
+
+
+{% if blog.handle == 'meetup' %}
+
+	{% section 'meetup-blog' %}
+
+{% elsif blog.handle == 'community' %}
+
+	{% section 'community-blog' %}
+
+{% elsif blog.handle == 'podcast' %}
+
+	{% section 'podcast-blog' %}
+
+
+{% elsif blog.handle == 'tante-e-blog' %}
+
+	{% section 'expert-blog' %}
+
+{% else %}
+
+	{% section 'main-blog' %}
+
+{% endif %}

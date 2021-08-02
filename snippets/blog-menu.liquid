@@ -1,0 +1,40 @@
+<style type="text/css">
+  /*.blog-nav li a:after{ content: " > "; margin-left: 10px; }*/
+  .blog-nav li:last-child a:after{ content: none; }
+
+  @media only screen and (max-width: 749px){
+    .blog-nav li a:after{ content: none; margin-left: 0px}
+  }
+
+
+  .blog-nav li.active a{ font-weight: bold; }
+  .blog-nav li.active { border-bottom: 1px solid #000;}
+
+  .blog-nav {margin: 0px;}
+  .blog-nav{ padding: 0px 0px 0px 50px ; }
+  .blog-nav li{ padding: 25px 0px; }
+</style>
+
+<div class=" sub-menu " style="    box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.1); margin-bottom: 0px;" > 
+<nav class="page-width " id="AccessibleNav" role="navigation">
+  <ul class="site-nav blog-nav list--inline text-left" id="SiteNav" >
+
+
+    
+      <li class=" {%if active == 1%} active {%endif%}">
+        <a href="/blogs/podcast" class="site-nav__link site-nav__link--main">Video-Podcast</a>
+      </li>    
+      <li class=" {%if active == 2%} active {%endif%}" %>
+        <a href="/blogs/community" class="site-nav__link site-nav__link--main ">Shopify Community  </a>
+      </li>   
+      <li class=" {%if active == 3%} active {%endif%}">
+        <a href="/blogs/tante-e-blog" class="site-nav__link site-nav__link--main">Shopify Experten Blog</a>
+      </li>
+  
+    
+  
+  </ul>
+
+</nav>
+
+</div>

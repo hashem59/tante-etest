@@ -1,0 +1,206 @@
+
+
+
+
+{% include 'community-podcast-content', current_blog:1 , targetBlog: blogs.podcast %}
+
+
+
+{% schema %}
+  {
+    "name": "Podcast Blog page",
+    "settings":[
+
+      {
+        "type":"header",
+        "content":"Header"
+      },
+
+      {        
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+      },
+      {
+      "type":"color",
+      "id":"overlay_text_color",
+      "label":"Overlay text color",
+      "default":"#FFFFFF"
+      },
+      {
+      "type":"color",
+      "id":"overlay_transparence",
+      "label":"Overlay Transparent color",
+      "default":"#000000"
+      },
+      {
+        "type": "select",
+        "id": "trancparency_percent",
+        "label": "Transparency percent",
+        "default": "0.3",
+        "options": [
+          {
+            "label": "10%",
+            "value": "0.1"
+          },
+          {
+            "label": "20%",
+            "value": "0.2"
+          },
+          {
+            "label": "30%",
+            "value": "0.3"
+          },
+          {
+            "label": "40%",
+            "value": "0.4"
+          },
+          {
+            "label": "50%",
+            "value": "0.5"
+          },
+          {
+            "label": "60%",
+            "value": "0.6"
+          },
+          {
+            "label": "70%",
+            "value": "0.7"
+          },
+          {
+            "label": "80%",
+            "value": "0.8"
+          },
+          {
+            "label": "90%",
+            "value": "0.9"
+          },
+          {
+            "label": "100%",
+            "value": "1"
+          }]
+          },
+      {
+        "type": "select",
+        "id": "alignment",
+        "label": "Image alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Image with text overlay"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+          },
+          {
+            "type": "select",
+            "id": "hero_size",
+            "label": "Section height",
+            "default": "medium",
+            "options": [
+              {
+                "label": "Extra Small",
+                "value": "x-small"
+              },
+              {
+                "label": "Small",
+                "value": "small"
+              },
+              {
+                "label": "Medium",
+                "value": "medium"
+              },
+              {
+                "label": "Large",
+                "value": "large"
+              },
+              {
+                "label": "Extra Large",
+                "value": "x-large"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "text_size",
+            "label": "Text size",
+            "default": "medium",
+            "options": [
+              {
+                "label": "Medium",
+                "value": "medium"
+              },
+              {
+                "label": "Large",
+                "value": "large"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          },
+
+
+
+          {
+            "type":"header",
+            "content":"Ads banners"
+          },
+
+          {
+            "type": "url",
+            "id": "ad_1_url",
+            "label": "Ad banner link 1"
+          },
+          {
+            "type":"image_picker",
+            "id":"ad_1_img",
+            "label":"Ad banner image 1"
+          },          
+
+          {
+            "type": "url",
+            "id": "ad_2_url",
+            "label": "Ad banner link 2"
+          },
+          {
+            "type":"image_picker",
+            "id":"ad_2_img",
+            "label":"Ad banner image 2"
+          }          
+
+
+    ]
+
+
+
+}
+
+{% endschema%}

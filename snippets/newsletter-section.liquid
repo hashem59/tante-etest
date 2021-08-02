@@ -1,0 +1,49 @@
+<style type="text/css">
+  .form-wrapper form{ display: inline-block; }
+  .form-wrapper .password__input-group{max-width: 550px;}
+</style>
+  <div class="page-width text-center">
+    
+    <div class="grid">
+
+    <div class="grid__item medium-up--one-half medium-up--text-left small--text-center">
+        <div class="block-header " style="padding-top: 10px;">
+
+
+          {% if block.settings.subheading != blank %}
+            <h2 class="h2" >{{ block.settings.subheading | escape }}</h2>
+          {% endif %}
+
+        </div>
+    </div>
+
+    <div class="grid__item medium-up--one-half medium-up--text-right small--text-center form-wrapper">
+
+    {% form 'customer' %}
+      {{ form.errors | default_errors }}
+      {% if form.posted_successfully? %}
+        <p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
+      {% else %}
+        <div class="input-group password__input-group">
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <input type="email"
+            name="contact[email]"
+            id="Email"
+            class="input-group__field newsletter__input"
+            value="{% if customer %}{{ customer.email }}{% endif %}"
+            placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+            autocorrect="off"
+            autocapitalize="off">
+          <span class="input-group__btn">
+            <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
+              <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+            </button>
+          </span>
+        </div>
+      {% endif %}
+    {% endform %}
+
+  </div>
+</div>
+
+</div>

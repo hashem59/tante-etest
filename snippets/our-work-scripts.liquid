@@ -1,0 +1,72 @@
+<script>
+
+/*----------*/
+$(document).ready(function() {
+  var dataHtml;
+  var CurrentTabWrapper = document.getElementById('current-tab-content-wrap');
+  var LoaderIcon = document.getElementById('loader_wrap').outerHTML;
+  $.get('https://tante-e.com/pages/other-projects',function(data,status,xhr){
+  dataHtml = data;
+  },"html").done(function(){
+    setTabContent();
+  })
+
+  function setTabContent() {
+    parser = new DOMParser()
+    doc = parser.parseFromString(dataHtml , "text/html")
+    var shopSetupContent = doc.getElementById('shop-setup-projects').innerHTML;
+    var shopCustimizationContent = doc.getElementById('shop-custimization-projects').innerHTML;
+    var onlineMartketingContent = doc.getElementById('online-marketing-projects').innerHTML;
+    var crmContent = doc.getElementById('crm-projects').innerHTML;
+    var urlParams= window.location.search.substring(1);
+    /* handle on first load -------------*/
+    if (urlParams.length < 2) {
+      window.history.pushState("","", window.location.href + "?work=shops-setup" );
+      CurrentTabWrapper.innerHTML = shopSetupContent;
+    } else if (urlParams.length > 2) {
+        var CurrUrlParm = urlParams.split("=")[1];
+        if (CurrUrlParm == "shops-setup") {
+          CurrentTabWrapper.innerHTML = shopSetupContent;
+        } else if (CurrUrlParm == "shop-optimization") {
+          CurrentTabWrapper.innerHTML = shopCustimizationContent;
+        } else if (CurrUrlParm == "online-marketing") {
+          CurrentTabWrapper.innerHTML = onlineMartketingContent;
+        } else if (CurrUrlParm == "crm") {
+          CurrentTabWrapper.innerHTML = crmContent;
+        }
+    }
+    /* end handle on first load-----------*/
+    /* handle on click-----------*/
+    var tabsContents = [shopSetupContent,shopCustimizationContent,onlineMartketingContent,crmContent];
+    var NewUlrParms = ["?work=shops-setup","?work=shop-optimization","?work=online-marketing","?work=crm"]
+    var ContentNavTabs = document.querySelectorAll('.p-nav-wrab .nav-tem-wr');
+    ContentNavTabs.forEach(function(NabTabItem){
+      NabTabItem.addEventListener('click', function() {
+        // to get the index of clicked tab
+        var allNodes = Array.prototype.slice.call(document.querySelectorAll('.p-nav-wrab .grid')[0].children),
+        currentTab = this;
+        var tabIndex = allNodes.indexOf(currentTab);
+        CurrentTabWrapper.innerHTML = LoaderIcon;
+        setTimeout(function(){
+           CurrentTabWrapper.innerHTML = tabsContents[tabIndex];
+         }, 200);
+         $('.nav-tem-wr.selected').removeClass('selected');
+         currentTab.classList.add('selected');
+        var originalHref = window.location.href.split('?')[0];
+        window.history.pushState("","", originalHref + NewUlrParms[tabIndex] );
+      })
+    })
+    /* End handle on click-----------*/
+  }
+  /* handle the arrow on the mobile*/
+  var arreBtn = document.querySelectorAll('.nav-arrow');
+
+  arreBtn.forEach(function(arrow){
+    arrow.addEventListener('click', function(){
+      $('.p-nav-wrab').toggleClass('nav-not-open');
+    })
+  })
+  /* end handle the arrow on mobile*/
+})
+
+</script>

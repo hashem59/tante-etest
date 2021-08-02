@@ -1,0 +1,203 @@
+
+<style type="text/css">
+	.why-points ul {
+    list-style: none;
+    padding: 15px 0px;
+	}
+
+	.why-points ul li {
+
+	    /*font-size: 14px;*/
+    	padding-left: 26px;
+    	margin-bottom: 10px;
+   		display: table;
+    	background: url(//cdn.shopify.com/s/files/1/0003/7729/0803/t/4/assets/icon-check_small.png?2042399171170477838) no-repeat left center;
+    	background-size: 18px;
+
+	}
+
+/*	.why-points ul li:before {
+	    padding-right: 10px;
+	    content: '';
+
+	    display: table-cell;
+	}*/
+
+</style>
+<div class="">
+
+<div style="border-bottom: 0px solid #e1e1e1; margin-bottom: 0px; ">
+
+	<div class="grid grid--no-gutters " >
+		<div class="grid__item medium-up--one-half" 
+		style="background: url({{section.settings.image | img_url: 'master'}}) no-repeat; 
+		background-size:cover; min-height:550px;" >
+			{% comment %}<img  width="100%">{% endcomment %}
+		</div>
+		<div class="grid__item medium-up--one-half" style="padding-top: 20px;">
+
+      		{% include 'mailchimp-freeaudit' %}
+	      
+	    </div>
+	</div>
+</div>
+
+
+
+
+<div class="grid grid--no-gutters" >
+	<div class="grid__item medium-up--one-half text-center"style="padding-top: 30px;" >
+	
+	<div style="max-width: 600px; margin: 0px auto;padding: 10px;">
+	      
+	      {% if section.settings.title != blank %}
+	        <h2 class="h1 mega-title" style="color: #ec1e79; ">
+	        	{{section.settings.title}}
+	    	</h2>
+	     {% endif %}
+	      
+	      {% if section.settings.subtitle != blank %}
+	        <div class="rte-setting">
+	        	<p style="line-height: 30px;">
+	        		{{ section.settings.subtitle }} 
+	        	</p>
+			</div>  
+		{% endif %}    
+	      
+	    	<div class="why-points">
+	            <ul>
+	            	{% if section.settings.pt1 != blank %}
+	            			<li><p>{{section.settings.pt1}}</p></li>
+	            	{% endif %}
+	            	{% if section.settings.pt2 != blank %}
+	            			<li><p>{{section.settings.pt2}}</p></li>
+	            	{% endif %}
+	            	{% if section.settings.pt3 != blank %}
+	            			<li><p>{{section.settings.pt3}}</p></li>
+	            	{% endif %}
+	            	{% if section.settings.pt4 != blank %}
+	            			<li><p>{{section.settings.pt4 }}</p></li>
+	            	{% endif %}
+	            </ul>
+	      	</div>
+
+	      	<div>
+{% comment %}	      		<h2 class="h1 mega-title text-left" style="text-decoration: line-through; font-weight: normal;">
+	      		 	Statt 299€ 
+	      		</h2>{% endcomment %}
+
+	      		<p style="text-decoration: line-through; font-weight: bold;" class="text-left">Statt 299€ </p>
+	      	</div>
+
+	      	<div>
+	      		{% comment %}<h2 class="h1 mega-title text-left" style="color: #ec1e79; font-weight:normal; ">
+	      		 KOSTENLOS 
+	      		</h2>{% endcomment %}
+	      		<p style="color: #ec1e79; text-align: left; font-weight: bold;">KOSTENLOS</p>
+	      	</div>
+	    </div>
+
+	</div>
+
+	<div class="grid__item medium-up--one-half" style="background: url({{section.settings.image2 | img_url: 'master'}}) no-repeat; 
+		background-size:cover; min-height:550px;">
+		{% comment %}<img src="{{section.settings.image2 | img_url: 'master'}}" width="100%">{% endcomment %}
+	</div>
+
+</div>
+
+</div>
+
+
+
+<div style="background-color:#e3e0e0; padding:10px 0px;">
+<div class="page-width">
+  
+
+  
+    <div class="logo-bar">
+      
+        <div class="logo-bar__item">
+          
+            <a href="https://www.shopify.com/?ref=bertbaum-internet" class="logo-bar__link">
+          
+          
+            <img src="//cdn.shopify.com/s/files/1/0003/7729/0803/files/shopify_expert_2048x_f7ab7fc3-38bb-404b-a729-6b9ea18eb7d6_160x160@2x.png?v=1525082748" alt="" class="logo-bar__image">
+          
+          
+            </a>
+          
+        </div>
+      
+        <div class="logo-bar__item">
+          
+            <a href="https://www.klaviyo.com/partner/signup?utm_source=0010V00002CC4Hw&amp;utm_medium=partner" class="logo-bar__link">
+          
+          
+            <img src="//cdn.shopify.com/s/files/1/0003/7729/0803/files/klaviyo_160x160@2x.png?v=1520259076" alt="" class="logo-bar__image">
+          
+          
+            </a>
+          
+        </div>
+      
+    </div>
+  
+
+  
+</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Free Audit",
+    "settings": [
+
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+
+     {
+        "type": "richtext",
+        "id": "subtitle",
+        "label": "Subheading"
+	 },
+	  {
+	    "type": "image_picker",
+	    "id": "image",
+	    "label": "Banner photo"
+	  },
+	  {
+	    "type": "image_picker",
+	    "id": "image2",
+	    "label": "Banner photo 2"
+	  },
+
+    {
+    "type": "text",
+    "id": "pt1",
+    "label": "Featured point 1"
+     },
+    {
+    "type": "text",
+    "id": "pt2",
+    "label": "Featured point 2"
+     },
+    {
+    "type": "text",
+    "id": "pt3",
+    "label": "Featured point 3"
+     },
+    {
+    "type": "text",
+    "id": "pt4",
+    "label": "Featured point 4"
+     }
+
+    ]
+ }
+
+
+ {% endschema %}

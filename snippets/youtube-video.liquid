@@ -1,0 +1,23 @@
+  <style type="text/css">
+  #featured-yt{
+  width:750px; margin:10px auto; 
+  }
+  
+  @media only screen and (max-width:900px){
+    #featured-yt{ width:90%;}
+  }
+</style>
+<div class=" text-center"  data-section-type="featured-video-section" id="featured-yt" style="padding: 20px 0px;">
+
+ 	{% if block.settings.yt_link != blank%}
+      <iframe src="//www.youtube-nocookie.com/embed/{{block.settings.yt_link}}?rel=0&amp;showinfo=0&amp;vq=620" width="100%" max-width="650" height="380" frameborder="0"></iframe>
+ 	{% else %}
+ 		<img src="https://cdn.shopify.com/s/files/1/0003/7729/0803/files/IMG_0175_Kopie_1024x1024.jpg?v=1531583593"width="750px">
+ 	{% endif %}
+ 	
+    
+  
+
+</div>
+
+

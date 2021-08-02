@@ -1,0 +1,146 @@
+<style type="text/css">
+  .meetup-blog .logo-bar__item {
+    max-width: 200px;
+}
+
+  .posts-container h2{ padding: 20px 0px; }
+  .posts-container .grid__item{
+    padding-bottom: 30px;
+    color: #FFF;
+  }
+  .post-wrapper .rte {
+    /*position: absolute;*/
+    bottom: 5px;
+    color: #FFF;
+  }
+
+
+  .post-wrapper{
+    position: relative;
+  }
+
+  .wrapper-transparent{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   
+  }
+  .post-wrapper .article__title {
+    margin: 10px auto;
+   }
+   .post-wrapper .post-meta{
+    color: #cac7c7;
+    } 
+
+    .article__grid-image-wrapper{     min-height: 300px; }
+
+   
+
+
+</style>
+
+
+
+{% include 'blog-menu', active: current_blog %}
+{%include 'hero-section', block:section  %}   
+
+<div class="page-width">
+
+
+  <div class="grid">
+
+    <div class="grid__item medium-up--two-thirds">
+          
+          {% if targetBlog.articles.size == 0 %}
+            <p class="text-center">coming soon - we are working heavily on it and preparing the last things</p>
+          {%endif%}
+
+      <div class="posts-container">
+      {% comment %}<h2 class="h2">Most recent published content:</h2>{% endcomment %}
+      <div class="grid ">
+
+        {% assign customIndex = 1 %}
+        {% for article in targetBlog.articles  %}
+
+          {% assign filtertags = current_tags | size  %}
+          {% if filtertags > 0  %}
+            
+            {% assign found = false %}
+            
+            {% for tag in article.tags  %}
+            {% comment %}{{article.tags }}{% endcomment %}
+              {% if current_tags contains tag %}
+                {% assign found = true %}
+              {% endif %}
+            {% endfor %}
+
+            {% if found == false %}
+              {% continue %}
+            {% endif %}
+
+          {% endif %}
+
+
+        <div class="grid__item medium-up--one-half" >
+
+          <a href="{{ article.url }}">
+          <div class="post-wrapper" >
+              <div class="wrapper-transparent">
+
+                <a href="{{ article.url }}">
+                  <div class="article__grid-image-wrapper js" style="background:url({{ article.image | img_url: '600x600' }}) no-repeat; background-size: cover; background-position: center;">
+                  </div>
+                </a>
+
+
+
+              <h3 class="article__title h4">
+                <a href="{{ article.url }}" style="color: #000;">{{ article.title }}</a>
+              </h3>
+
+              <div class="rte article__grid-excerpt text-center">
+                <a href="{{ article.url }}" class="btn" style="width: 100%;">mehr</a>
+              </div>
+
+            </div>
+          </div>
+          </a>
+
+        </div>
+
+
+        {% assign remainder = customIndex | modulo:2 %} 
+
+        {% if  remainder == 0 %}
+          </div>
+          <div class="grid ">
+        {% endif %}
+
+        {% assign customIndex = customIndex | plus:1 %}
+
+
+        {% endfor %}
+      </div>
+      </div>
+
+      <!-- left box footer -->
+
+  </div>
+
+  <div class="grid__item medium-up--one-third right-column">
+
+    
+    {% include 'blog-right-column' %}
+
+
+  </div>
+
+
+</div>
+
+</div>
+      
+
+{% comment %}Footer{% endcomment %}
+{% comment %}{% include 'article-newsletter'%}{% endcomment %}
+{% include 'article-social-footer'%}

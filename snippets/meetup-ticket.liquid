@@ -1,0 +1,47 @@
+<style type="text/css">
+  .form-wrapper form{display: inline-block;}
+
+  @media only screen and ( min-width: 749px)
+  {
+    .xtile{padding-left: 60px;}
+  }
+</style>
+  <div class="page-width text-center" style="padding-top: 20px; padding-bottom: 20px;">
+    
+    <div class="grid">
+
+    <div class="grid__item medium-up--one-half medium-up--text-left small--text-center xtile">
+        <div class="block-header " style="padding-top: 10px;">
+
+          <h3 class="h4" >
+            Join our next meetup: 
+            {% if block.settings.subheading != blank %}
+             {{ block.settings.subheading | escape }}
+            {% else%}
+              Get notified
+            {% endif %}
+          </h3>
+        </div>
+    </div>
+
+    <div class="grid__item medium-up--one-half medium-up--text-right small--text-center">
+
+      {% if block.settings.ticket_link != blank%}
+        <div class="">
+              <a class="btn" href="{{block.settings.ticket_link}}"  style="width: 100%; max-width: 500px; ">
+                Get a free ticket
+              </a>
+        </div>
+      {% else%}
+      {% comment %}//signup form{% endcomment %}
+            <a href="http://facebook.us15.list-manage.com/subscribe?u=2ec812678928546dde45a7098&id=e5850f5528" target="_blank" class="btn" style="width: 100%; max-width:500px; ">
+               Get notified when signup is available
+           </a>
+
+
+      {% endif %}
+  </div>
+
+</div>
+
+</div>
